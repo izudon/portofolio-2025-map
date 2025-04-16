@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <title>Leaflet 地図</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    rel="stylesheet"
-    href="./leaflet.css"
-  />
+  <link rel="stylesheet" href="./leaflet.css" />
   <style>
     html, body, #map {
       height: 100%;
@@ -19,14 +16,14 @@
 <body>
   <div id="map"></div>
 
-  <script
-    src="./leaflet.js"
-  ></script>
+  <script src="./leaflet.js"></script>
   <script>
     // クエリパラメータ取得
     const params = new URLSearchParams(window.location.search);
     const lat = parseFloat(params.get("lat"));
     const lon = parseFloat(params.get("lon"));
+    const label = params.get("label");
+    const labelText = (label && label.trim()) ? label : "指定地点";
 
     if (!isNaN(lat) && !isNaN(lon)) {
       const map = L.map("map").setView([lat, lon], 18);
@@ -37,7 +34,7 @@
         maxZoom: 19,
       }).addTo(map);
 
-      L.marker([lat, lon]).addTo(map).bindPopup("指定地点").openPopup();
+      L.marker([lat, lon]).addTo(map).bindPopup(labelText).openPopup();
     } else {
       alert("lat または lon のパラメータが不正です。");
     }
