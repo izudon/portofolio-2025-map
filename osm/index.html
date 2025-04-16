@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leaflet 地図</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="./leaflet.css"
+  />
+  <style>
+    html, body, #map {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script
+    src="./leaflet.js"
+  ></script>
+  <script>
+    // クエリパラメータ取得
+    const params = new URLSearchParams(window.location.search);
+    const lat = parseFloat(params.get("lat"));
+    const lon = parseFloat(params.get("lon"));
+
+    if (!isNaN(lat) && !isNaN(lon)) {
+      const map = L.map("map").setView([lat, lon], 18);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+      }).addTo(map);
+
+      L.marker([lat, lon]).addTo(map).bindPopup("指定地点").openPopup();
+    } else {
+      alert("lat または lon のパラメータが不正です。");
+    }
+  </script>
+</body>
+</html>
