@@ -1,0 +1,43 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1366083925",
+  "properties": {
+    "building": "retail",
+    "name": "バーレーンパビリオン",
+    "name:en": "Kingdom of Bahrain Pavilion",
+    "name:ja": "バーレーンパビリオン",
+    "id": "way/1366083925"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3844518,
+          34.6476565
+        ],
+        [
+          135.3846522,
+          34.6473447
+        ],
+        [
+          135.3848307,
+          34.6475208
+        ],
+        [
+          135.3844808,
+          34.6477171
+        ],
+        [
+          135.3844518,
+          34.6476565
+        ]
+      ]
+    ]
+  }
+}
+]
+}

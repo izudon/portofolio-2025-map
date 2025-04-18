@@ -1,0 +1,43 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1377330041",
+  "properties": {
+    "building": "retail",
+    "name": "バングラデシュパビリオン",
+    "name:en": "Bangladesh Pavilion",
+    "name:ja": "バングラデシュパビリオン",
+    "id": "way/1377330041"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3813984,
+          34.6506233
+        ],
+        [
+          135.3812631,
+          34.6506306
+        ],
+        [
+          135.3812463,
+          34.6504122
+        ],
+        [
+          135.3813811,
+          34.6504049
+        ],
+        [
+          135.3813984,
+          34.6506233
+        ]
+      ]
+    ]
+  }
+}
+]
+}

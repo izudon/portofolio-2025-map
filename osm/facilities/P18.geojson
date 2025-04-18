@@ -1,0 +1,43 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1366083948",
+  "properties": {
+    "building": "retail",
+    "name": "アラブ首長国連邦館",
+    "name:en": "United Arab Emirates Pavilion",
+    "name:ja": "アラブ首長国連邦館",
+    "id": "way/1366083948"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3857233,
+          34.6482515
+        ],
+        [
+          135.3863074,
+          34.6478321
+        ],
+        [
+          135.386507,
+          34.6481644
+        ],
+        [
+          135.3859827,
+          34.6483761
+        ],
+        [
+          135.3857233,
+          34.6482515
+        ]
+      ]
+    ]
+  }
+}
+]
+}

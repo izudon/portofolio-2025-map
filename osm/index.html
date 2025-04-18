@@ -18,25 +18,47 @@
 
   <script src="./leaflet.js"></script>
   <script>
-    // クエリパラメータ取得
     const params = new URLSearchParams(window.location.search);
-    const lat = parseFloat(params.get("lat"));
-    const lon = parseFloat(params.get("lon"));
-    const label = params.get("label");
-    const labelText = (label && label.trim()) ? label : "指定地点";
+    const facility = params.get("facility");
 
-    if (!isNaN(lat) && !isNaN(lon)) {
-      const map = L.map("map").setView([lat, lon], 18);
+    const map = L.map("map"); // 一旦作成だけしておく
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        maxZoom: 19,
-      }).addTo(map);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+    }).addTo(map);
 
-      L.marker([lat, lon]).addTo(map).bindPopup(labelText).openPopup();
+    if (facility) {
+      const geojsonUrl = `./facilities/${facility}.geojson`;
+      fetch(geojsonUrl)
+        .then(res => {
+          if (!res.ok) throw new Error("GeoJSON 読み込み失敗");
+          return res.json();
+        })
+        .then(data => {
+          const geoLayer = L.geoJSON(data, {
+            style: {
+              color: "magenta",
+              weight: 3,
+              opacity: 0.8,
+            }
+          }).addTo(map);
+
+          // GeoJSON のバウンディングボックスを使って中心に移動
+          const bounds = geoLayer.getBounds();
+          if (bounds.isValid()) {
+            map.fitBounds(bounds); // 地図をフィット
+          } else {
+            alert("GeoJSON の範囲が取得できませんでした。");
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          alert("GeoJSON ファイルの読み込みに失敗しました。");
+        });
     } else {
-      alert("lat または lon のパラメータが不正です。");
+      alert("facility パラメータが指定されていません。");
     }
   </script>
 </body>

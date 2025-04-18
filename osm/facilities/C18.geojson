@@ -1,0 +1,43 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1366032404",
+  "properties": {
+    "building": "retail",
+    "name": "ウズベキスタンパビリオン",
+    "name:en": "Uzbekistan Pavilion",
+    "name:ja": "ウズベキスタンパビリオン",
+    "id": "way/1366032404"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3813684,
+          34.6510257
+        ],
+        [
+          135.3812177,
+          34.6509084
+        ],
+        [
+          135.3810923,
+          34.6507969
+        ],
+        [
+          135.3815416,
+          34.650763
+        ],
+        [
+          135.3813684,
+          34.6510257
+        ]
+      ]
+    ]
+  }
+}
+]
+}

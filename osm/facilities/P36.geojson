@@ -1,0 +1,43 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1366083938",
+  "properties": {
+    "building": "retail",
+    "name": "北欧パビリオン",
+    "name:en": "Nordic Pavilion",
+    "name:ja": "北欧パビリオン",
+    "id": "way/1366083938"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3841325,
+          34.6476284
+        ],
+        [
+          135.3840309,
+          34.6473554
+        ],
+        [
+          135.3842688,
+          34.6472955
+        ],
+        [
+          135.3843704,
+          34.6475685
+        ],
+        [
+          135.3841325,
+          34.6476284
+        ]
+      ]
+    ]
+  }
+}
+]
+}

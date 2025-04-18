@@ -1,0 +1,43 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1366067878",
+  "properties": {
+    "building": "retail",
+    "name": "ブルガリア共和国館",
+    "name:en": "Republic of Bulgaria Pavilion",
+    "name:ja": "ブルガリア共和国館",
+    "id": "way/1366067878"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3803578,
+          34.6489399
+        ],
+        [
+          135.3803659,
+          34.6488041
+        ],
+        [
+          135.3806055,
+          34.6488137
+        ],
+        [
+          135.3805974,
+          34.6489495
+        ],
+        [
+          135.3803578,
+          34.6489399
+        ]
+      ]
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,43 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1377330040",
+  "properties": {
+    "building": "retail",
+    "name": "セネガル共和国パビリオン",
+    "name:en": "Republic of Senegal Pavilion",
+    "name:ja": "セネガル共和国パビリオン",
+    "id": "way/1377330040"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3815269,
+          34.6506164
+        ],
+        [
+          135.3813984,
+          34.6506233
+        ],
+        [
+          135.3813811,
+          34.6504049
+        ],
+        [
+          135.3815097,
+          34.6503981
+        ],
+        [
+          135.3815269,
+          34.6506164
+        ]
+      ]
+    ]
+  }
+}
+]
+}
