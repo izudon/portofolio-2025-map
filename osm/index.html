@@ -29,6 +29,39 @@
       maxZoom: 19,
     }).addTo(map);
 
+    // --- TSV ファイルから全ポイントをマーカー表示 ---
+    fetch("./facilities/all-points.tsv")
+      .then(res => {
+        if (!res.ok) throw new Error("TSV 読み込み失敗");
+        return res.text();
+      })
+      .then(text => {
+        const lines = text.trim().split("\n");
+        const header = lines.shift().split("\t"); // ["id", "lng", "lat"]
+        lines.forEach(line => {
+          const cols = line.split("\t");
+          const id = cols[0];
+          const lng = parseFloat(cols[1]);
+          const lat = parseFloat(cols[2]);
+          if (!isNaN(lat) && !isNaN(lng)) {
+            L.marker([lat, lng])
+              .addTo(map)
+	      .bindPopup(id)
+              .on("click", () => {
+                map.panTo([lat, lng], map.getZoom(), {
+                  animate: true,
+                  duration: 0.5, // 秒数（調整可能）
+                });
+              }
+	    );
+          }
+        });
+      })
+      .catch(err => {
+        console.error(err);
+        alert("TSV ファイルの読み込みに失敗しました。");
+      });
+
     if (facility) {
       const geojsonUrl = `./facilities/${facility}.geojson`;
       fetch(geojsonUrl)
@@ -45,10 +78,9 @@
             }
           }).addTo(map);
 
-          // GeoJSON のバウンディングボックスを使って中心に移動
           const bounds = geoLayer.getBounds();
           if (bounds.isValid()) {
-            map.fitBounds(bounds); // 地図をフィット
+            map.fitBounds(bounds);
           } else {
             alert("GeoJSON の範囲が取得できませんでした。");
           }
