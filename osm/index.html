@@ -22,82 +22,138 @@
 
   <script src="./leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([34.6507, 135.3856], 17);
 
+    class Facility {
+      static POLYGON_STYLE = {
+        color: "#3388ff",
+        weight: 3,
+        opacity: 0.8,
+        fillColor: "#3388ff",
+        fillOpacity: 0.2
+      };
+    
+      static POPUP_STYLE = {
+        maxWidth: 300,
+        maxHeight: 200
+      };
+    
+      static currentlyAppeared = null;
+      static currentlyRaised = null;
+    
+      static map = null; // ← 外部から代入される共通マップ
+    
+      constructor(id) {
+        this.id = id;
+      }
+    
+      static async create(id) {
+        const facility = new Facility(id);
+    
+        const geoRes = await fetch(`./facilities/${id}.geojson`);
+        const geojson = await geoRes.json();
+        const feature = geojson.features?.[0];
+        const geometry = feature?.geometry;
+    
+        if (!geometry) throw new Error(`No geometry in ${id}.geojson`);
+    
+        const popupRes = await fetch(`./popups/${id}.html`);
+        const popupHtml = await popupRes.text();
+    
+        facility.popup = L.popup(Facility.POPUP_STYLE)
+          .setContent(popupHtml);
+    
+        const addEvents = layer => {
+          layer.on("mouseover", () => facility.appear());
+          layer.on("mouseout", () => facility.disappear());
+          layer.on("click", () => facility.raise());
+          layer.on("popupclose", () => facility.lower());
+        };
+    
+        if (geometry.type === "Polygon" || geometry.type === "MultiPolygon") {
+          facility.polygon = L.geoJSON(feature, {
+            style: Facility.POLYGON_STYLE,
+            onEachFeature: (_, layer) => addEvents(layer)
+          });
+          facility.center = facility.polygon.getBounds().getCenter();
+        } else if (geometry.type === "Point") {
+          const coords = geometry.coordinates;
+          facility.marker = L.geoJSON(feature, {
+            onEachFeature: (_, layer) => addEvents(layer)
+          });
+          facility.center = L.latLng(coords[1], coords[0]);
+        } else {
+          throw new Error(`Unsupported geometry type: ${geometry.type}`);
+        }
+    
+        facility.popup.setLatLng(facility.center);
+        return facility;
+      }
+    
+      appear() {
+        if (this.polygon) {
+          this.polygon.setStyle({ fillOpacity: 0.5, opacity: 1.0 });
+          if (Facility.currentlyAppeared && Facility.currentlyAppeared !== this) {
+            Facility.currentlyAppeared.disappear();
+          }
+          Facility.currentlyAppeared = this;
+        }
+      }
+    
+      disappear() {
+        if (this.polygon) {
+          this.polygon.setStyle({ fillOpacity: 0.0, opacity: 0.0 });
+          Facility.currentlyAppeared = null;
+        }
+      }
+    
+      raise() {
+        if (this.popup) {
+          this.popup.openOn(Facility.map); // static map を使用
+          Facility.map.panTo(this.center, { duration: 0.5 });
+          if (Facility.currentlyRaised && Facility.currentlyRaised !== this) {
+            Facility.currentlyRaised.lower();
+          }
+          Facility.currentlyRaised = this;
+          this.appear();
+        }
+      }
+    
+      lower() {
+        if (this.popup) {
+          this.popup.close();
+          Facility.currentlyRaised = null;
+          this.disappear();
+        }
+      }
+    }
+
+
+    const map = L.map('map', {
+      center: [35.0, 139.0],
+      zoom: 17.5,
+      zoomSnap: 0.5,
+      zoomDelta: 0.5
+    });
+    
+    Facility.map = map; // ← クラス変数に map を登録
+    
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    let currentVisibleLayer = null;
-
-    fetch('./facilities/all-points.tsv')
-      .then(response => response.text())
-      .then(text => {
-        const lines = text.trim().split('\n');
-        const data = lines.slice(1).map(line => {
-          const cols = line.split('\t');
-          return {
-            id: cols[0],
-            lng: parseFloat(cols[1]),
-            lat: parseFloat(cols[2])
-          };
+    const ids = ["C01", "C02", "C03"];
+    
+    Promise.all(ids.map(id => Facility.create(id)))
+      .then(facilities => {
+        facilities.forEach(f => {
+          if (f.polygon) f.polygon.addTo(map);
+          if (f.marker) f.marker.addTo(map);
         });
-
-        data.forEach(point => {
-          fetch(`./facilities/${point.id}.geojson`)
-            .then(response => response.json())
-            .then(geojson => {
-              const layer = L.geoJSON(geojson, {
-                style: {
-                  color: 'blue',
-                  weight: 2,
-		  fill: true,
-                  fillColor: 'blue',
-                  fillOpacity: 0.0,
-                  opacity: 0.0
-                },
-                onEachFeature: function (feature, layer) {
-                  const center = layer.getBounds().getCenter();
-
-                  const makeVisible = () => {
-                    layer.setStyle({ fillOpacity: 0.3, opacity: 1.0 });
-                  };
-
-                  const makeInvisible = () => {
-                    layer.setStyle({ fillOpacity: 0.0, opacity: 0.0 });
-                  };
-
-                  const popup = L.popup()
-                    .setLatLng(center)
-                    .setContent(point.id);
-
-                  layer.on('mouseover', () => makeVisible());
-
-                  layer.on('mouseout', () => {
-                    if (!map.hasLayer(popup)) makeInvisible();
-                  });
-
-                  layer.on('click', () => {
-                    if (currentVisibleLayer && currentVisibleLayer !== layer) {
-                      currentVisibleLayer.setStyle({ fillOpacity: 0.0, opacity: 0.0 });
-                    }
-                    makeVisible();
-                    popup.openOn(map);
-                    currentVisibleLayer = layer;
-                  });
-
-                  map.on('popupclose', () => {
-                    makeInvisible();
-                    currentVisibleLayer = null;
-                  });
-                }
-              });
-
-              layer.addTo(map);
-            })
-            .catch(err => console.error(`Error loading GeoJSON for ${point.id}:`, err));
-        });
-      });
+    
+        facilities[0].raise(); // 最初の施設を強調・パン・ポップアップ表示
+      })
+      .catch(err => console.error("読み込み失敗:", err));
+    
   </script>
 </body>
 </html>
