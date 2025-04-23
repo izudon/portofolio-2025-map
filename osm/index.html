@@ -136,6 +136,12 @@
       return Object.fromEntries(
         Object.entries(g).map(([id, _]) => [id, Facility.create(id, g[id], p[id])])
       );
+    }).then(data => {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("facility");
+      if (id !== null) {
+        data[id].raise();
+      }
     }).catch(error => {
       console.error('読み込みエラー:', error);
     });
