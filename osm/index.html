@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Leaflet GeoJSON 強調表示</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./leaflet.css" />
+  <link rel="stylesheet" href="./leaflet/leaflet.css" />
   <style>
     html, body {
       margin: 0;
@@ -20,25 +20,35 @@
 <body>
   <div id="map"></div>
 
-  <script src="./leaflet.js"></script>
+  <script src="./leaflet/leaflet.js"></script>
   <script>
 
     class Facility {
-      static POLYGON_STYLE = {
-        color: "#3388ff",
-        weight: 3,
-        opacity: 0.8,
-        fillColor: "#3388ff",
+      static APPEAR = {
+        opacity: 0.5,
         fillOpacity: 0.2
       };
+    
+      static DISAPPEAR = {
+        opacity: 0.0,
+        fillOpacity: 0.0
+      };
+    
+      static POLYGON_STYLE;
+    
+      static {
+        Facility.POLYGON_STYLE = {
+          weight: 3,
+          color: "#3388ff",
+          fillColor: "#3388ff",
+          ...Facility.DISAPPEAR
+        };
+      }
     
       static POPUP_STYLE = {
         maxWidth: 300,
         maxHeight: 200
       };
-    
-      static currentlyAppeared = null;
-      static currentlyRaised = null;
     
       static map = null; // ← 外部から代入される共通マップ
     
@@ -49,14 +59,14 @@
       static async create(id) {
         const facility = new Facility(id);
     
-        const geoRes = await fetch(`./facilities/${id}.geojson`);
+        const geoRes = await fetch(`./data/facilities/${id}.geojson`);
         const geojson = await geoRes.json();
         const feature = geojson.features?.[0];
         const geometry = feature?.geometry;
     
         if (!geometry) throw new Error(`No geometry in ${id}.geojson`);
     
-        const popupRes = await fetch(`./popups/${id}.html`);
+        const popupRes = await fetch(`./data/popups/${id}.html`);
         const popupHtml = await popupRes.text();
     
         facility.popup = L.popup(Facility.POPUP_STYLE)
@@ -90,46 +100,26 @@
       }
     
       appear() {
-        if (this.polygon) {
-          this.polygon.setStyle({ fillOpacity: 0.5, opacity: 1.0 });
-          if (Facility.currentlyAppeared && Facility.currentlyAppeared !== this) {
-            Facility.currentlyAppeared.disappear();
-          }
-          Facility.currentlyAppeared = this;
-        }
+        this.polygon?.setStyle(Facility.APPEAR);
       }
     
       disappear() {
-        if (this.polygon) {
-          this.polygon.setStyle({ fillOpacity: 0.0, opacity: 0.0 });
-          Facility.currentlyAppeared = null;
-        }
+        this.polygon?.setStyle(Facility.DISAPPEAR);
       }
     
       raise() {
-        if (this.popup) {
-          this.popup.openOn(Facility.map); // static map を使用
-          Facility.map.panTo(this.center, { duration: 0.5 });
-          if (Facility.currentlyRaised && Facility.currentlyRaised !== this) {
-            Facility.currentlyRaised.lower();
-          }
-          Facility.currentlyRaised = this;
-          this.appear();
-        }
+        this.popup?.openOn(Facility.map);
+        Facility.map.panTo(this.center, { duration: 0.5 });
       }
     
       lower() {
-        if (this.popup) {
-          this.popup.close();
-          Facility.currentlyRaised = null;
-          this.disappear();
-        }
+        this.popup?.close();
       }
     }
 
 
     const map = L.map('map', {
-      center: [34.649952, 135.383606],
+      center: [34.649952, 135.383606], // 静けさの森の中央点
       maxZoom: 18,
       zoom: 17.5,
       zoomSnap: 0.5,
