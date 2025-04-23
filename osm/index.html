@@ -56,29 +56,24 @@
         this.id = id;
       }
     
-      static async create(id) {
+      static create(id, geojson, popupHtml) {
         const facility = new Facility(id);
-    
-        const geoRes = await fetch(`./data/facilities/${id}.geojson`);
-        const geojson = await geoRes.json();
+      
         const feature = geojson.features?.[0];
         const geometry = feature?.geometry;
-    
-        if (!geometry) throw new Error(`No geometry in ${id}.geojson`);
-    
-        const popupRes = await fetch(`./data/popups/${id}.html`);
-        const popupHtml = await popupRes.text();
-    
+      
+        if (!geometry) throw new Error(`No geometry in geojson for id: ${id}`);
+      
         facility.popup = L.popup(Facility.POPUP_STYLE)
           .setContent(popupHtml);
-    
+      
         const addEvents = layer => {
           layer.on("mouseover", () => facility.appear());
           layer.on("mouseout", () => facility.disappear());
           layer.on("click", () => facility.raise());
           layer.on("popupclose", () => facility.lower());
         };
-    
+      
         if (geometry.type === "Polygon" || geometry.type === "MultiPolygon") {
           facility.polygon = L.geoJSON(feature, {
             style: Facility.POLYGON_STYLE,
@@ -96,9 +91,9 @@
         } else {
           throw new Error(`Unsupported geometry type: ${geometry.type}`);
         }
-    
+      
         facility.popup.setLatLng(facility.center);
-        return facility; // idをキーとした１要素オブジェクト
+        return facility;
       }
     
       appear() {
@@ -134,16 +129,16 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    fetch('./data/index.txt')
-      .then(response => {
-        if (!response.ok) throw new Error('ファイルの読み込みに失敗しました');
-        return response.text();
-      })
-      .then(text => {
-        const ids = text.split(/\r?\n/).filter(line => line.trim() !== "");
-        return Promise.all(ids.map(id => Facility.create(id)));
-      })
-      .catch(err => console.error("読み込み失敗:", err));
+    Promise.all([
+      fetch('./data/geojsons.json').then(res => res.json()),
+      fetch('./data/popups.json'  ).then(res => res.json())
+    ]).then(([g, p]) => {
+      return Object.fromEntries(
+        Object.entries(g).map(([id, _]) => [id, Facility.create(id, g[id], p[id])])
+      );
+    }).catch(error => {
+      console.error('読み込みエラー:', error);
+    });
     
   </script>
 </body>
