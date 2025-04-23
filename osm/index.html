@@ -85,18 +85,20 @@
             onEachFeature: (_, layer) => addEvents(layer)
           });
           facility.center = facility.polygon.getBounds().getCenter();
+          facility.polygon.addTo(Facility.map);
         } else if (geometry.type === "Point") {
           const coords = geometry.coordinates;
           facility.marker = L.geoJSON(feature, {
             onEachFeature: (_, layer) => addEvents(layer)
           });
           facility.center = L.latLng(coords[1], coords[0]);
+          facility.marker.addTo(Facility.map);
         } else {
           throw new Error(`Unsupported geometry type: ${geometry.type}`);
         }
     
         facility.popup.setLatLng(facility.center);
-        return facility;
+        return facility; // idをキーとした１要素オブジェクト
       }
     
       appear() {
@@ -132,16 +134,14 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    const ids = ["C01", "C02", "C03"];
-    
-    Promise.all(ids.map(id => Facility.create(id)))
-      .then(facilities => {
-        facilities.forEach(f => {
-          if (f.polygon) f.polygon.addTo(map);
-          if (f.marker) f.marker.addTo(map);
-        });
-    
-        facilities[0].raise(); // 最初の施設を強調・パン・ポップアップ表示
+    fetch('./data/index.txt')
+      .then(response => {
+        if (!response.ok) throw new Error('ファイルの読み込みに失敗しました');
+        return response.text();
+      })
+      .then(text => {
+        const ids = text.split(/\r?\n/).filter(line => line.trim() !== "");
+        return Promise.all(ids.map(id => Facility.create(id)));
       })
       .catch(err => console.error("読み込み失敗:", err));
     
