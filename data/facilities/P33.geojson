@@ -1,0 +1,41 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1366083941",
+  "properties": {
+    "building": "yes",
+    "name:en": "Rest area",
+    "id": "way/1366083941"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3846342,
+          34.647869
+        ],
+        [
+          135.3845209,
+          34.6477687
+        ],
+        [
+          135.3846804,
+          34.647647
+        ],
+        [
+          135.3847936,
+          34.6477473
+        ],
+        [
+          135.3846342,
+          34.647869
+        ]
+      ]
+    ]
+  }
+}
+]
+}

@@ -1,12 +1,12 @@
 #!/bin/sh
 
-rm -fv ../index.json
+rm -fv ../geojsons.json
 
-echo -n "{" >> ../index.json
+echo -n "{" >> ../geojsons.json
 
 for file in *.geojson; do
-	echo -n \"${file%.geojson}\":`jq -c . $file`, >> ../index.json
+	echo -n \"${file%.geojson}\":`jq -c . $file`, >> ../geojsons.json
 done
 
-truncate -s -1 ../index.json
-echo -n "}" >> ../index.json
+truncate -s -1 ../geojsons.json
+echo -n "}" >> ../geojsons.json

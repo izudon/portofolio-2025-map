@@ -1,0 +1,41 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1366083943",
+  "properties": {
+    "building": "yes",
+    "name:en": "Group rest area",
+    "id": "way/1366083943"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3849581,
+          34.6484146
+        ],
+        [
+          135.3848333,
+          34.6481571
+        ],
+        [
+          135.384945,
+          34.6481205
+        ],
+        [
+          135.3850697,
+          34.648378
+        ],
+        [
+          135.3849581,
+          34.6484146
+        ]
+      ]
+    ]
+  }
+}
+]
+}
