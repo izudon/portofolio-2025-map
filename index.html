@@ -1,258 +1,198 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head><meta charset="UTF-8"><title>万博会場パビリオンへのリンク</title></head>
+<head>
+  <meta charset="UTF-8" />
+  <title>Leaflet GeoJSON 強調表示</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./leaflet/leaflet.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    #map {
+      width: 100vw;
+      height: 100vh;
+    }
+    .leaflet-popup-content-wrapper {
+      max-width: 85vmin;
+      max-height: 45vh;
+      overflow: visible; /* ← スクロールさせない */
+      box-sizing: border-box;
+    }
+    .leaflet-popup-content {
+      font-size: 6vmin;
+      line-height: 1.3;
+      color: #333;
+      overflow: auto;
+    }
+    .greeting-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 90vmin;
+      height: 90vmin;
+      transform: translate(-50%, -50%);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 6vmin;
+    }
+    .greeting-bos h2 {
+      font-size: 14vmin;
+    }
+
+    .greeting-box button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
 <body>
-  <h1>万博会場パビリオンへのリンク</h1>
-  <p>徐々によくなっていきます</p>
-  <p>Presented by Masakazu IZUI</p>
-  <p><a href="./osm/"><img alt="enter" src="./enter.jpg" width="100%" /></a></p>
-  <h3>海外パビリオン</h3>
-  <ul>
-    <li><a href="./osm/?facility=P36">アイスランド</a></li>
-    <li><a href="./osm/?facility=P01">アイルランド</a></li>
-    <li><a href="./osm/?facility=C07">アゼルバイジャン</a></li>
-    <li>アフガニスタン</li>
-    <li><a href="./osm/?facility=P11">アメリカ</a></li>
-    <li><a href="./osm/?facility=P18">アラブ首長国連邦</a></li>
-    <li><a href="./osm/?facility=S05">アルジェリア</a></li>
-    <li>アルゼンチン</li>
-    <li>アルバニア</li>
-    <li><a href="./osm/?facility=C05">アルメニア</a></li>
-    <li><a href="./osm/?facility=S23">アンゴラ</a></li>
-    <li><a href="./osm/?facility=S14">アンティグア・バーブーダ</a></li>
-    <li>アンドラ</li>
-    <li><a href="./osm/?facility=P03">イエメン</a></li>
-    <li><a href="./osm/?facility=S01">イスラエル</a></li>
-    <li><a href="./osm/?facility=S09">イタリア</a></li>
-    <li>イラク</li>
-    <li>イラン</li>
-    <li><a href="./osm/?facility=C17">インド</a></li>
-    <li><a href="./osm/?facility=C16">インドネシア</a></li>
-    <li><a href="./osm/?facility=P03">ウガンダ</a></li>
-    <li><a href="./osm/?facility=S01">ウクライナ</a></li>
-    <li><a href="./osm/?facility=C18">ウズベキスタン</a></li>
-    <li><a href="./osm/?facility=S01">ウルグアイ</a></li>
-    <li><a href="./osm/?facility=S22">英国</a></li>
-    <li><a href="./osm/?facility=S14">エクアドル</a></li>
-    <li><a href="./osm/?facility=C22">エジプト</a></li>
-    <li>エストニア</li>
-    <li><a href="./osm/?facility=P03">エスワティニ</a></li>
-    <li><a href="./osm/?facility=C23">エチオピア</a></li>
-    <li>エリトリア</li>
-    <li>エルサルバドル</li>
-    <li><a href="./osm/?facility=C15">オーストラリア</a></li>
-    <li><a href="./osm/?facility=P23">オーストリア</a></li>
-    <li><a href="./osm/?facility=S15">オマーン</a></li>
-    <li><a href="./osm/?facility=S13">オランダ</a></li>
-    <li><a href="./osm/?facility=P03">ガーナ</a></li>
-    <li><a href="./osm/?facility=C23">カーボベルデ</a></li>
-    <li><a href="./osm/?facility=C23">ガイアナ</a></li>
-    <li><a href="./osm/?facility=C05">カザフスタン</a></li>
-    <li><a href="./osm/?facility=P17">カタール</a></li>
-    <li><a href="./osm/?facility=P19">カナダ</a></li>
-    <li><a href="./osm/?facility=S01">ガボン</a></li>
-    <li><a href="./osm/?facility=S14">カメルーン</a></li>
-    <li><a href="./osm/?facility=C23">ガンビア</a></li>
-    <li><a href="./osm/?facility=S04">カンボジア</a></li>
-    <li><a href="./osm/?facility=P03">北マケドニア</a></li>
-    <li><a href="./osm/?facility=S14">ギニア</a></li>
-    <li><a href="./osm/?facility=P03">ギニアビサウ</a></li>
-    <li>キプロス</li>
-    <li><a href="./osm/?facility=S14">キューバ</a></li>
-    <li>ギリシャ</li>
-    <li>キリバス</li>
-    <li><a href="./osm/?facility=P03">キルギス</a></li>
-    <li><a href="./osm/?facility=S01">グアテマラ</a></li>
-    <li><a href="./osm/?facility=P27">クウェート</a></li>
-    <li>クック諸島</li>
-    <li><a href="./osm/?facility=P03">グレナダ</a></li>
-    <li><a href="./osm/?facility=S01">クロアチア</a></li>
-    <li><a href="./osm/?facility=P03">ケニア</a></li>
-    <li><a href="./osm/?facility=C23">コートジボワール</a></li>
-    <li>コスタリカ</li>
-    <li><a href="./osm/?facility=P03">コソボ</a></li>
-    <li><a href="./osm/?facility=P03">コモロ</a></li>
-    <li><a href="./osm/?facility=P21">コロンビア</a></li>
-    <li>コンゴ共和国</li>
-    <li><a href="./osm/?facility=S14">コンゴ民主共和国</a></li>
-    <li><a href="./osm/?facility=C14">サウジアラビア</a></li>
-    <li><a href="./osm/?facility=P03">サモア</a></li>
-    <li><a href="./osm/?facility=S14">サントメ・プリンシペ</a></li>
-    <li><a href="./osm/?facility=C23">ザンビア</a></li>
-    <li><a href="./osm/?facility=S01">サンマリノ</a></li>
-    <li><a href="./osm/?facility=C23">シエラレオネ</a></li>
-    <li><a href="./osm/?facility=C23">ジブチ</a></li>
-    <li><a href="./osm/?facility=C23">ジャマイカ</a></li>
-    <li>ジョージア</li>
-    <li>シリア</li>
-    <li><a href="./osm/?facility=S11">シンガポール</a></li>
-    <li><a href="./osm/?facility=C23">ジンバブエ</a></li>
-    <li><a href="./osm/?facility=P22">スイス</a></li>
-    <li><a href="./osm/?facility=P36">スウェーデン</a></li>
-    <li><a href="./osm/?facility=S14">スーダン</a></li>
-    <li><a href="./osm/?facility=C13">スペイン</a></li>
-    <li><a href="./osm/?facility=P03">スリナム</a></li>
-    <li><a href="./osm/?facility=P03">スリランカ</a></li>
-    <li><a href="./osm/?facility=S01">スロバキア</a></li>
-    <li><a href="./osm/?facility=S01">スロベニア</a></li>
-    <li><a href="./osm/?facility=P03">セーシェル</a></li>
-    <li><a href="./osm/?facility=S14">赤道ギニア</a></li>
-    <li><a href="./osm/?facility=C21">セネガル</a></li>
-    <li><a href="./osm/?facility=C19">セルビア</a></li>
-    <li><a href="./osm/?facility=P03">セントクリストファー・ネイビス</a></li>
-    <li><a href="./osm/?facility=C23">セントビンセントおよびグレナディーン諸島</a></li>
-    <li><a href="./osm/?facility=P03">セントルシア</a></li>
-    <li><a href="./osm/?facility=C23">ソマリア</a></li>
-    <li><a href="./osm/?facility=P03">ソロモン諸島</a></li>
-    <li><a href="./osm/?facility=C12">タイ</a></li>
-    <li><a href="./osm/?facility=C04">大韓民国</a></li>
-    <li><a href="./osm/?facility=S14">タジキスタン</a></li>
-    <li><a href="./osm/?facility=C23">タンザニア</a></li>
-    <li><a href="./osm/?facility=P38">チェコ</a></li>
-    <li><a href="./osm/?facility=C23">チャド</a></li>
-    <li><a href="./osm/?facility=C23">中央アフリカ共和国</a></li>
-    <li><a href="./osm/?facility=P28">中華人民共和国</a></li>
-    <li><a href="./osm/?facility=S03">チュニジア</a></li>
-    <li><a href="./osm/?facility=S02">チリ</a></li>
-    <li><a href="./osm/?facility=C23">ツバル</a></li>
-    <li><a href="./osm/?facility=P36">デンマーク</a></li>
-    <li><a href="./osm/?facility=C03">ドイツ</a></li>
-    <li><a href="./osm/?facility=S14">トーゴ</a></li>
-    <li>ドミニカ国</li>
-    <li><a href="./osm/?facility=C23">ドミニカ共和国</a></li>
-    <li><a href="./osm/?facility=P03">トリニダード・トバゴ</a></li>
-    <li><a href="./osm/?facility=P35">トルクメニスタン</a></li>
-    <li><a href="./osm/?facility=C11">トルコ</a></li>
-    <li><a href="./osm/?facility=P03">トンガ</a></li>
-    <li><a href="./osm/?facility=S14">ナイジェリア</a></li>
-    <li><a href="./osm/?facility=C23">ナウル</a></li>
-    <li>ナミビア</li>
-    <li>ニウエ</li>
-    <li>ニカラグア</li>
-    <li>ニジェール</li>
-    <li><a href="./osm/?facility=E10">日本</a></li>
-    <li>ニュージーランド</li>
-    <li><a href="./osm/?facility=C01">ネパール</a></li>
-    <li><a href="./osm/?facility=P36">ノルウェー</a></li>
-    <li><a href="./osm/?facility=P34">バーレーン</a></li>
-    <li><a href="./osm/?facility=C23">ハイチ</a></li>
-    <li><a href="./osm/?facility=S14">パキスタン</a></li>
-    <li><a href="./osm/?facility=S09">バチカン市国</a></li>
-    <li><a href="./osm/?facility=S01">パナマ</a></li>
-    <li><a href="./osm/?facility=P03">バヌアツ</a></li>
-    <li>バハマ</li>
-    <li><a href="./osm/?facility=P03">パプアニューギニア</a></li>
-    <li><a href="./osm/?facility=P03">パラオ</a></li>
-    <li><a href="./osm/?facility=C23">パラグアイ</a></li>
-    <li><a href="./osm/?facility=P03">バルバドス</a></li>
-    <li><a href="./osm/?facility=S14">パレスチナ</a></li>
-    <li><a href="./osm/?facility=S16">ハンガリー</a></li>
-    <li><a href="./osm/?facility=C20">バングラデシュ</a></li>
-    <li><a href="./osm/?facility=C23">東ティモール</a></li>
-    <li><a href="./osm/?facility=C23">フィジー</a></li>
-    <li><a href="./osm/?facility=P09">フィリピン</a></li>
-    <li><a href="./osm/?facility=P36">フィンランド</a></li>
-    <li><a href="./osm/?facility=S14">ブータン</a></li>
-    <li><a href="./osm/?facility=P26">ブラジル</a></li>
-    <li><a href="./osm/?facility=P12">フランス</a></li>
-    <li><a href="./osm/?facility=S12">ブルガリア</a></li>
-    <li><a href="./osm/?facility=S14">ブルキナファソ</a></li>
-    <li><a href="./osm/?facility=C05">ブルネイ</a></li>
-    <li><a href="./osm/?facility=P03">ブルンジ</a></li>
-    <li><a href="./osm/?facility=P14X">ベトナム</a></li>
-    <li><a href="./osm/?facility=C23">ベナン</a></li>
-    <li>ベネズエラ</li>
-    <li>ベラルーシ</li>
-    <li><a href="./osm/?facility=S14">ベリーズ</a></li>
-    <li><a href="./osm/?facility=P05">ペルー</a></li>
-    <li><a href="./osm/?facility=S08">ベルギー</a></li>
-    <li><a href="./osm/?facility=S20">ポーランド</a></li>
-    <li>ボスニア・ヘルツェゴビナ</li>
-    <li>ボツワナ</li>
-    <li><a href="./osm/?facility=P03">ボリビア</a></li>
-    <li><a href="./osm/?facility=P20">ポルトガル</a></li>
-    <li><a href="./osm/?facility=S14">ホンジュラス</a></li>
-    <li><a href="./osm/?facility=S14">マーシャル諸島</a></li>
-    <li><a href="./osm/?facility=S14">マダガスカル</a></li>
-    <li><a href="./osm/?facility=P03">マラウイ</a></li>
-    <li><a href="./osm/?facility=S14">マリ</a></li>
-    <li><a href="./osm/?facility=P37">マルタ</a></li>
-    <li><a href="./osm/?facility=P02">マレーシア</a></li>
-    <li><a href="./osm/?facility=C23">ミクロネシア連邦</a></li>
-    <li>南アフリカ共和国</li>
-    <li><a href="./osm/?facility=S14">南スーダン</a></li>
-    <li>ミャンマー</li>
-    <li>メキシコ</li>
-    <li><a href="./osm/?facility=P03">モーリシャス</a></li>
-    <li><a href="./osm/?facility=C23">モーリタニア</a></li>
-    <li><a href="./osm/?facility=P08">モザンビーク</a></li>
-    <li><a href="./osm/?facility=C10">モナコ</a></li>
-    <li>モルディブ</li>
-    <li><a href="./osm/?facility=S14">モルドバ</a></li>
-    <li>モロッコ</li>
-    <li><a href="./osm/?facility=S14">モンゴル</a></li>
-    <li><a href="./osm/?facility=S01">モンテネグロ</a></li>
-    <li><a href="./osm/?facility=P04">ヨルダン</a></li>
-    <li><a href="./osm/?facility=S14">ラオス</a></li>
-    <li><a href="./osm/?facility=S06">ラトビア</a></li>
-    <li><a href="./osm/?facility=S06">リトアニア</a></li>
-    <li>リビア</li>
-    <li>リヒテンシュタイン</li>
-    <li><a href="./osm/?facility=S14">リベリア</a></li>
-    <li><a href="./osm/?facility=S21">ルーマニア</a></li>
-    <li><a href="./osm/?facility=C02">ルクセンブルク</a></li>
-    <li><a href="./osm/?facility=P03">ルワンダ</a></li>
-    <li><a href="./osm/?facility=C23">レソト</a></li>
-    <li>レバノン</li>
-    <li>ロシア</li>
-    <li>北朝鮮</li>
-    <li><a href="./osm/?facility=W02">台湾</a></li>
-    <li>パレスチナ</li>
-    <li>香港</li>
-    <li>マカオ</li>
-    <li>北極</li>
-    <li>南極</li>
-    <li><a href="./osm/?facility=S02X">欧州連合（EU）</a></li>
-    <li><a href="./osm/?facility=P29X">東南アジア諸国連合（ASEAN）</a></li>
-    <li><a href="./osm/?facility=P29X">国際連合（UN）</a></li>
-    <li><a href="./osm/?facility=P29X">国際赤十字・赤新月運動</a></li>
-    <li><a href="./osm/?facility=P29X">イーター国際核融合エネルギー機構（ITER）</a></li>
-    <li><a href="./osm/?facility=P29X">国際科学技術センター（ISTC）</a></li>
-    <li><a href="./osm/?facility=P29X">太陽に関する国際的な同盟（ISA）</a></li>
-    <li><a href="./osm/?facility=P29X">万博博物館</a></li>
-  </ul>
-  <h3>シグネチャー・パビリオン</h3>
-  <ul>
-    <li><a href="./osm/?facility=X01">Better Co-Being</a></li>
-    <li><a href="./osm/?facility=X02">いのちの未来</a></li>
-    <li><a href="./osm/?facility=X03">いのちの遊び場 クラゲ館</a></li>
-    <li><a href="./osm/?facility=X04">null2</a></li>
-    <li><a href="./osm/?facility=X05">いのち動的平衡館</a></li>
-    <li><a href="./osm/?facility=X06">いのちめぐる冒険</a></li>
-    <li><a href="./osm/?facility=X07">EARTH MART</a></li>
-    <li><a href="./osm/?facility=X08">Dialogue Theater －いのちのあかし－</a></li>
-  </ul>
-  <h3>国内パビリオン（東エリア）</h3>
-  <ul>
-    <li><a href="./osm/?facility=E01">関西パビリオン</a></li>
-    <li><a href="./osm/?facility=E02">大阪ヘルスケアパビリオン Nest for Reborn</a></li>
-    <li><a href="./osm/?facility=E03">NTT パビリオン</a></li>
-    <li><a href="./osm/?facility=E05">三菱未来館</a></li>
-    <li><a href="./osm/?facility=E06">パナソニックグループパビリオン「ノモの国」</a></li>
-    <li><a href="./osm/?facility=E07">住友館</a></li>
-    <li><a href="./osm/?facility=E08">電力館 可能性のタマゴたち</a></li>
-    <li><a href="./osm/?facility=E09">ウーマンズパビリオン in collaboration with Cartier</a></li>
-    <li><a href="./osm/?facility=E10">日本館</a></li>
-  </ul>
-  <h3>国内パビリオン（西エリア）</h3>
-  <ul>
-    <li><a href="./osm/?facility=W03">ガスパビリオン おばけワンダーランド</a></li>
-    <li><a href="./osm/?facility=W04">飯田グループｘ大阪公立大学共同出展館</a></li>
-    <li><a href="./osm/?facility=W05">ORA外食パビリオン「宴〜UTAGE〜」</a></li>
-    <li><a href="./osm/?facility=W06">BLUE OCEAN DOME（ブルーオーシャンドーム）</a></li>
-    <li><a href="./osm/?facility=W07">GUNDAM NEXT FUTURE PAVILION</a></li>
-    <li><a href="./osm/?facility=W09">PASONA NETUREVERSE</a></li>
-    <li><a href="./osm/?facility=W10">よしもと waraii myraii館</a></li>
-  </ul>
+  <div id="map"></div>
+
+  <script src="./leaflet/leaflet.js"></script>
+  <div id="greeting" class="greeting-box">
+    <h2>Day 101</h2>
+    <p>2025-07-22</p>
+    <div>
+      <h3><a href="./list/">パビリオンリスト</a></h3>
+    </div>
+    <button onclick="document.getElementById('greeting').style.display='none'">
+      Close
+    </button>
+  </div>
+
+  <script>
+
+    class Facility {
+      static APPEAR = {
+        opacity: 0.5,
+        fillOpacity: 0.2
+      };
+    
+      static DISAPPEAR = {
+        opacity: 0.0,
+        fillOpacity: 0.0
+      };
+    
+      static POLYGON_STYLE;
+    
+      static {
+        Facility.POLYGON_STYLE = {
+          weight: 3,
+          color: "#3388ff",
+          fillColor: "#3388ff",
+          ...Facility.DISAPPEAR
+        };
+      }
+    
+      static POPUP_STYLE = {
+        maxWidth: 300,
+        maxHeight: 200
+      };
+    
+      static map = null; // ← 外部から代入される共通マップ
+    
+      constructor(id) {
+        this.id = id;
+      }
+    
+      static create(id, geojson, popupHtml) {
+        const facility = new Facility(id);
+      
+        const feature = geojson.features?.[0];
+        const geometry = feature?.geometry;
+      
+        if (!geometry) throw new Error(`No geometry in geojson for id: ${id}`);
+      
+        facility.popup = L.popup(Facility.POPUP_STYLE)
+          .setContent(popupHtml);
+      
+        const addEvents = layer => {
+          layer.on("mouseover", () => facility.appear());
+          layer.on("mouseout", () => facility.disappear());
+          layer.on("click", () => facility.raise());
+          layer.on("popupclose", () => facility.lower());
+        };
+      
+        if (geometry.type === "Polygon" || geometry.type === "MultiPolygon") {
+          facility.polygon = L.geoJSON(feature, {
+            style: Facility.POLYGON_STYLE,
+            onEachFeature: (_, layer) => addEvents(layer)
+          });
+          facility.center = facility.polygon.getBounds().getCenter();
+          facility.polygon.addTo(Facility.map);
+        } else if (geometry.type === "Point") {
+          const coords = geometry.coordinates;
+          facility.marker = L.geoJSON(feature, {
+            onEachFeature: (_, layer) => addEvents(layer)
+          });
+          facility.center = L.latLng(coords[1], coords[0]);
+          facility.marker.addTo(Facility.map);
+        } else {
+          throw new Error(`Unsupported geometry type: ${geometry.type}`);
+        }
+      
+        facility.popup.setLatLng(facility.center);
+        return facility;
+      }
+    
+      appear() {
+        this.polygon?.setStyle(Facility.APPEAR);
+      }
+    
+      disappear() {
+        this.polygon?.setStyle(Facility.DISAPPEAR);
+      }
+    
+      raise() {
+        this.popup?.openOn(Facility.map);
+        Facility.map.panTo(this.center, { duration: 0.5 });
+      }
+    
+      lower() {
+        this.popup?.close();
+      }
+    }
+
+
+    const map = L.map('map', {
+      center: [34.649952, 135.383606], // 静けさの森の中央点
+      maxZoom: 18,
+      zoom: 17.5,
+      zoomSnap: 0.5,
+      zoomDelta: 0.5
+    });
+    
+    Facility.map = map; // ← クラス変数に map を登録
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    Promise.all([
+      fetch('./data/geojsons.json').then(res => res.json()),
+      fetch('./data/popups.json'  ).then(res => res.json())
+    ]).then(([g, p]) => {
+      return Object.fromEntries(
+        Object.entries(g).map(([id, _]) => [id, Facility.create(id, g[id], p[id])])
+      );
+    }).then(data => {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("facility");
+      if (id !== null) {
+        data[id].raise();
+      }
+    }).catch(error => {
+      console.error('読み込みエラー:', error);
+    });
+    
+  </script>
 </body>
 </html>
