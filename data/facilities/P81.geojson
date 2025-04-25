@@ -1,0 +1,48 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/1366083928",
+  "properties": {
+    "building": "yes",
+    "building:levels": "2",
+    "name": "ウォータープラザマーケットプレイス東",
+    "name:en": "Water Plaza Marketplace East",
+    "roof:shape": "flat",
+    "id": "way/1366083928"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          135.3852707,
+          34.6471285
+        ],
+        [
+          135.3849924,
+          34.647026
+        ],
+        [
+          135.3849066,
+          34.6467997
+        ],
+        [
+          135.3851899,
+          34.6467305
+        ],
+        [
+          135.3854651,
+          34.6468862
+        ],
+        [
+          135.3852707,
+          34.6471285
+        ]
+      ]
+    ]
+  }
+}
+]
+}
