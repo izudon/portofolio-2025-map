@@ -1,4 +1,4 @@
-import { Facility, Exposition } from './classes.js';
+import { Facility, Exposition, NDay } from './classes.js';
 
 const map = L.map('map', {
   center: [34.649952, 135.383606],
@@ -23,6 +23,8 @@ async function main() {
   Exposition.fromTsv(expositionTsv);
   Facility.addExpositions();
   Facility.addGeoJSON(geojsons, map);
+
+  NDay.setDayCount();
 
   const params = new URLSearchParams(location.search);
   const id = params.get("facility");

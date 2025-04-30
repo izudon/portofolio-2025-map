@@ -200,3 +200,29 @@ export class Exposition extends Entity {
     `;
   }
 }
+
+export class NDay {
+  static setDayCount() {
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const startDate = new Date(currentYear, 3, 12); // 月は0から 3 は 4月
+    const endDate = new Date(currentYear, 9, 13);  // 月は0から 9 は 10月
+    const dayCountElement = document.getElementById('daycount');
+    let daycount = 999;
+  
+    if (today < startDate) {
+      daycount = 0;
+    } else if (today > endDate) {
+      daycount = 185; // 10月13日までの日数
+    } else {
+      const timeDiff = today.getTime() - startDate.getTime();
+      daycount = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    }
+  
+    if (dayCountElement) {
+      dayCountElement.textContent = daycount;
+    } else {
+      console.error("Error: Element with id 'daycount' not found.");
+    }
+  }
+}
