@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1366083953",
+      "properties": {
+        "building": "retail",
+        "name": "ブラジルパビリオン",
+        "name:en": "Brazil Pavilion",
+        "name:ja": "ブラジルパビリオン",
+        "id": "way/1366083953"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3847634,
+              34.6487878
+            ],
+            [
+              135.384566,
+              34.6482735
+            ],
+            [
+              135.3847505,
+              34.6482256
+            ],
+            [
+              135.3849479,
+              34.6487399
+            ],
+            [
+              135.3847634,
+              34.6487878
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

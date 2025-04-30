@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1350834632",
+      "properties": {
+        "building": "retail",
+        "name": "コモンズ-D",
+        "name:en": "Commons-D",
+        "name:ja": "コモンズ-D",
+        "id": "way/1350834632"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3809311,
+              34.6492548
+            ],
+            [
+              135.3809531,
+              34.6487219
+            ],
+            [
+              135.381499,
+              34.6487371
+            ],
+            [
+              135.381477,
+              34.64927
+            ],
+            [
+              135.3809311,
+              34.6492548
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

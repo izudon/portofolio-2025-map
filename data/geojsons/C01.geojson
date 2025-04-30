@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1366032382",
+      "properties": {
+        "building": "retail",
+        "name": "ネパールパビリオン",
+        "name:en": "Nepal Pavilion",
+        "name:ja": "ネパールパビリオン",
+        "id": "way/1366032382"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3859822,
+              34.6507271
+            ],
+            [
+              135.385793,
+              34.6504803
+            ],
+            [
+              135.3862252,
+              34.6504493
+            ],
+            [
+              135.3861127,
+              34.6505857
+            ],
+            [
+              135.3859822,
+              34.6507271
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

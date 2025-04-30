@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1377330039",
+      "properties": {
+        "building": "retail",
+        "name": "エジプト・アラブ共和国パビリオン",
+        "name:en": "Arab Republic of Egypt Pavilion",
+        "name:ja": "エジプト・アラブ共和国パビリオン",
+        "id": "way/1377330039"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.381654,
+              34.6506097
+            ],
+            [
+              135.3815269,
+              34.6506164
+            ],
+            [
+              135.3815097,
+              34.6503981
+            ],
+            [
+              135.3816373,
+              34.6503912
+            ],
+            [
+              135.381654,
+              34.6506097
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

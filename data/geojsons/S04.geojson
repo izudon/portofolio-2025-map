@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1377331123",
+      "properties": {
+        "building": "retail",
+        "name": "カンボジアパビリオン",
+        "name:en": "Cambodia Pavilion",
+        "name:ja": "カンボジアパビリオン",
+        "id": "way/1377331123"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3812845,
+              34.6499162
+            ],
+            [
+              135.3812049,
+              34.6496965
+            ],
+            [
+              135.3813307,
+              34.6496656
+            ],
+            [
+              135.3814105,
+              34.6498853
+            ],
+            [
+              135.3812845,
+              34.6499162
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1350834624",
+      "properties": {
+        "building": "retail",
+        "name": "コモンズ-C",
+        "name:en": "Commons-C",
+        "name:ja": "コモンズ-C",
+        "id": "way/1350834624"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3823821,
+              34.6499209
+            ],
+            [
+              135.3817585,
+              34.6499621
+            ],
+            [
+              135.3817298,
+              34.649668
+            ],
+            [
+              135.3823534,
+              34.6496268
+            ],
+            [
+              135.3823821,
+              34.6499209
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1366032396",
+      "properties": {
+        "building": "retail",
+        "name": "トルコパビリオン",
+        "name:en": "Türkiye Pavilion",
+        "name:ja": "トルコパビリオン",
+        "id": "way/1366032396"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3837268,
+              34.6516921
+            ],
+            [
+              135.3835405,
+              34.6516967
+            ],
+            [
+              135.3835199,
+              34.6513594
+            ],
+            [
+              135.3836813,
+              34.6513469
+            ],
+            [
+              135.3837268,
+              34.6516921
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1366032391",
+      "properties": {
+        "building": "retail",
+        "name": "アゼルバイジャンパビリオン",
+        "name:en": "Azerbaijan Pavilion",
+        "name:ja": "アゼルバイジャンパビリオン",
+        "id": "way/1366032391"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3843882,
+              34.6511067
+            ],
+            [
+              135.38424,
+              34.6511272
+            ],
+            [
+              135.3841716,
+              34.650793
+            ],
+            [
+              135.3843199,
+              34.6507724
+            ],
+            [
+              135.3843882,
+              34.6511067
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

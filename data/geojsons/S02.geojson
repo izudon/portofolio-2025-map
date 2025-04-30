@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1377331125",
+      "properties": {
+        "building": "retail",
+        "name": "チリパビリオン",
+        "name:en": "Chile Pavilion",
+        "name:ja": "チリパビリオン",
+        "id": "way/1377331125"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3815376,
+              34.6498541
+            ],
+            [
+              135.3814572,
+              34.6496345
+            ],
+            [
+              135.3815873,
+              34.6496022
+            ],
+            [
+              135.3816684,
+              34.6498217
+            ],
+            [
+              135.3815376,
+              34.6498541
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

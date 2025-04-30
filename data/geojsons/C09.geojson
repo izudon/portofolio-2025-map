@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1366032394",
+      "properties": {
+        "building": "yes",
+        "name": "夜の地球",
+        "name:en": "Earth at Night",
+        "name:ja": "夜の地球",
+        "id": "way/1366032394"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3838484,
+              34.6511384
+            ],
+            [
+              135.383757,
+              34.650823
+            ],
+            [
+              135.3839334,
+              34.6507884
+            ],
+            [
+              135.3840248,
+              34.6511038
+            ],
+            [
+              135.3838484,
+              34.6511384
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-id	sign	name_ja	f
+id	sign	name_ja	fid
 a-iceland	🇮🇸	アイスランド	P36
 a-ireland	🇮🇪	アイルランド	P01
 a-azerbaijan	🇦🇿	アゼルバイジャン	C07
@@ -219,22 +219,23 @@ s-fukuoka	📝	いのち動的平衡館（福岡 伸一）	X05
 s-kawamori	📝	いのちめぐる冒険（河森 正治）	X06
 s-koyama	📝	EARTH MART（小山 薫堂）	X07
 s-kawase	📝	Dialogue Theater －いのちのあかし－（河瀨 直美）	X08
-d-kansai	🏢	関西パビリオン	E01
-d-osaka	🏢	大阪ヘルスケアパビリオン Nest for Reborn	E02
+d-japanese-government	🏢	日本館	E10
+d-womens-pv	🏢	ウーマンズパビリオン in collaboration with Cartier	E09
+d-osaka-pv	🏢	大阪ヘルスケアパビリオン Nest for Reborn	E02
+d-kansai-pv	🏢	関西パビリオン	E01
 d-ntt	🏢	NTT パビリオン	E03
-d-mitsubishi	🏢	三菱未来館	E05
-d-panasonic	🏢	パナソニックグループパビリオン「ノモの国」	E06
-d-sumitomo	🏢	住友館	E07
 d-electric	🏢	電力館 可能性のタマゴたち	E08
-d-women	🏢	ウーマンズパビリオン in collaboration with Cartier	E09
-d-japan	🏢	日本館	E10
+d-sumitomo	🏢	住友館	E07
+d-panasonic	🏢	パナソニックグループパビリオン「ノモの国」	E06
+d-mitsubishi	🏢	三菱未来館	E05
+d-yoshimoto	🏢	よしもと waraii myraii館	W10
+d-pasona	🏢	PASONA NETUREVERSE	W09
+d-zeri	🏢	BLUE OCEAN DOME（ブルーオーシャン・ドーム）	W06
+d-bandai-namco	🏢	GUNDAM NEXT FUTURE PAVILION	W07
+d-tamayama	🏢	TECH WORLD	W02
 d-gas	🏢	ガスパビリオン おばけワンダーランド	W03
 d-iida	🏢	飯田グループｘ大阪公立大学共同出展館	W04
-d-utage	🏢	ORA外食パビリオン『宴〜UTAGE〜』	W05
-d-blue	🏢	BLUE OCEAN DOME（ブルーオーシャン・ドーム）	W06
-d-gundam	🏢	GUNDAM NEXT FUTURE PAVILION	W07
-d-pasona	🏢	PASONA NETUREVERSE	W09
-d-yoshimoto	🏢	よしもと waraii myraii館	W10
+d-ora	🏢	ORA外食パビリオン『宴〜UTAGE〜』	W05
 wc-d01	🚻	トイレ（夢洲の庭）	WC01
 wc-d02	🚻	トイレ（残念石）	WC02
 wc-d03	🚻	トイレ（空気膜）	WC03
@@ -243,3 +244,73 @@ wc-d05	🚻	トイレ（積み木）	WC05
 wc-d06	🚻	トイレ（水の循環）	WC06
 wc-d07	🚻	トイレ（蜃気楼）	WC07
 wc-d08	🚻	トイレ（多様性）	WC08
+mc-01	🍙	ローソン大阪・関西万博店	E81
+mc-02	☕	ローソンカフェ大阪・関西万博店	E81
+mc-03	🎁	2025大阪・関西万博 会場内 オフィシャルストア 東ゲート店 MARUZEN JUNKUDO	E81
+mc-04	🎁	2025大阪・関西万博 会場内 オフィシャルストア 東ゲート店 大松松坂屋百貨店	E81
+mc-05	☕	人と地球とショートケーキと FUJIYA EXPO 2025 STORE	E83
+mc-06	🎁	Souvenir JAPAN EAST 大阪・関西万博店	E83
+mc-07	🎁	おいしい老舗のたからばこ 大阪産（もん）名品	E83
+mc-08	🎁	京丹波	E83
+mc-09	🎁	北陸お花ごっつおマルシェ	E83
+mc-10	🎁	Korea mart【韓国市場】	E82
+mc-11	🍴	インドカレーの店	E82
+mc-12	🎁	ソウル Live!	E82
+mc-13	🍴	讃岐うどん	E82
+mc-14	🎁	大阪ハラルムガルEXPO2025店	E82
+mc-15	🍴	PAULANER IMBISS（樽生ドイツビールと洋食の店）	E82
+mc-16	🎁	SOFRA produced by Mrs. Istanbul	E82
+mc-17	🎁	景福宮	E82
+mc-18	🍴	SAIGON 屋台	E82
+mc-19	🎁	SOLEIL EXPO2025 STORE（2F）	W01
+mc-20	🎁	飲食・物販店舗（2F）	W01
+mc-21	🎁	飲食・物販店舗（2F）	W01
+mc-22	🎁	遊んでい館？（2F）	W01
+mc-23	🎁	ピザ・ダ・マリオ（2F）	W01
+mc-24	🍴	河童ラーメン本舗 大阪・関西万博店（2F）	W01
+mc-25	🍴	アフリカダイニングホール PANAF'（2F）	W01
+mc-26	🍴	サスティナブルフードコート 大阪のれんめぐり〜食と祭 EXPO〜	W01
+mc-27	🎁	飲食・物販店舗	W01
+mc-28	☕	K-Restaurant&Cafe'	W01
+mc-29	🍴	つくもうどんEXPRESS 大阪・関西万博店	W01
+mc-30	🍴	魯園菜館 大阪・関西万博店	W01
+mc-31	🎁	おこしやす 京の小路 〜Kyoto's Crafts & Foods〜	W01
+mc-32	🎁	K-POP SHOP 韓流スターワールド	W01
+mc-33	🎁	アニメイト大阪・関西万博店	W01
+mc-34	☕	f fields	F81
+mc-35	🍴	とんかつ乃ぐち	F81
+mc-36	🍴	EARTH SWEETS 〜Presented by Takeshita Seika〜	F81
+mc-37	🍴	GF RAMEN LAB 大阪・関西万博店	F81
+mc-38	🍴	テラスニチレイ	F81
+mc-39	☕	THEO'S CAFE'	F81
+mc-40	☕	SUNTORY PARK CAFE ⭐️	S81
+mc-41	🎁	水空 SUIKUU（2F） ⭐️	S81
+mc-42	🎁	近代卒の魚と紀州の恵み 近畿大学水産研究所 大阪・関西万博ウォータープラザ店（2F） ⭐️	S81
+mc-43	🍙	セブン-イレブン ウォータープラザ店 ⭐️	S81
+mc-44	🎁	URBAN RESEARCH EXPO2025 STORE	S81
+mc-45	🍴	グランドフードコート	L81
+mc-46	🍴	牛カツ京都勝牛	L81
+mc-47	🍴	エスニックフュージョンレストラン	L81
+mc-48	🍙	アカカベ 風の広場店	L81
+mc-49	🍴	好きやねん大阪 フードコート WEST SIDE	L81
+mc-50	🍴	ディワンキッチン	L81
+mc-51	🎁	Asia物産	L81
+mc-52	🎁	Souvenir JAPAN WEST 大阪・関西万博店	L81
+mc-53	🍙	セブン-イレブン 西ゲート店 ⭐️	W81
+mc-54	🎁	KANSAIマルシェいちびり庵	W81
+mc-55	☕	菓匠 芭蕉堂 和スイーツカフェ	W81
+mc-56	☕	神戸養蜂場カフェ	W81
+mc-57	🍴	のり結び（大森屋おむすび専門店）	W81
+mc-58	🎁	2025大阪・関西万博 会場内 オフィシャルストア 西ゲート店 JR西日本グループ	W81
+mc-59	🎁	2025大阪・関西万博 会場内 オフィシャルストア 西ゲート店 KINTETSU	W81
+mc-60	🍴	醗酵食堂 Hasshoku	P81
+mc-61	🎁	MARE produced by Mrs. Istanbul	P81
+mc-62	🍙	ファミリーマート 大阪・関西万博店	P81
+mc-63	🎁	felissimore（フェリシモっと）大阪・関西万博店	P81
+mc-64	🍴	好きやねん大阪 フードコート EAST SIDE（2F）	P81
+mc-65	🍴	ラウンジ＆ダイニング	E14
+mc-66	🍴	くら寿司 大阪・関西万博店 ⭐️	L82
+mc-67	🍴	スシロー 未来型万博店 ⭐️	F82
+mc-68	🍴	MANEKI FUTURE STUDIO JAPAN	F83
+mc-69	🍴	らぽっぽファーム〜おいもとイチゴとりんごの farm to table〜	F84
+mc-70	🍴	月化粧ｘうなぎパイ 大阪・関西万博店	P82

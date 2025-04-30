@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1366067877",
+      "properties": {
+        "building": "retail",
+        "name": "オランダパビリオン",
+        "name:en": "The Netherlands Pavilion",
+        "name:ja": "オランダパビリオン",
+        "id": "way/1366067877"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3802639,
+              34.6487761
+            ],
+            [
+              135.3802752,
+              34.6486417
+            ],
+            [
+              135.3807001,
+              34.6486659
+            ],
+            [
+              135.3806888,
+              34.6488004
+            ],
+            [
+              135.3802639,
+              34.6487761
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

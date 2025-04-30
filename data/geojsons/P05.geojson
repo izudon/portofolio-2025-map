@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1377330598",
+      "properties": {
+        "building": "retail",
+        "name": "ペルー館",
+        "name:en": "Peru Pavilion",
+        "name:ja": "ペルー館",
+        "id": "way/1377330598"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              135.3848651,
+              34.6496372
+            ],
+            [
+              135.384758,
+              34.6496186
+            ],
+            [
+              135.3848115,
+              34.6494073
+            ],
+            [
+              135.3849193,
+              34.6494261
+            ],
+            [
+              135.3848651,
+              34.6496372
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
