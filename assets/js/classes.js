@@ -202,27 +202,37 @@ export class Exposition extends Entity {
 }
 
 export class NDay {
-  static setDayCount() {
+  static daycount = (() => {
     const today = new Date();
-    const currentYear = today.getFullYear();
-    const startDate = new Date(currentYear, 3, 12); // 月は0から 3 は 4月
-    const endDate = new Date(currentYear, 9, 13);  // 月は0から 9 は 10月
-    const dayCountElement = document.getElementById('daycount');
-    let daycount = 999;
-  
-    if (today < startDate) {
-      daycount = 0;
-    } else if (today > endDate) {
-      daycount = 185; // 10月13日までの日数
-    } else {
-      const timeDiff = today.getTime() - startDate.getTime();
-      daycount = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const y = today.getFullYear();
+    const start = new Date(y, 3, 12);
+    const end = new Date(y, 9, 13);
+    const msPerDay = 86400000;
+    const totalDays = Math.floor((end.getTime() - start.getTime()) / msPerDay);
+
+    return today < start ? 0
+         : today > end   ? totalDays
+         : Math.floor((today.getTime() - start.getTime()) / msPerDay);
+  })();
+
+  static setDayCount() {
+    const el = document.getElementById('daycount');
+    el ? el.textContent = String(NDay.daycount)
+       : console.error("Error: Element with id 'daycount' not found.");
+  }
+
+  static setNDayCountry() {
+    const exposition = Exposition.ndayMap[NDay.daycount];
+    const el = document.getElementById('ndaycountry');
+    if (!el) {
+      console.error("Error: Element with id 'ndaycountry' not found.");
+      return;
     }
-  
-    if (dayCountElement) {
-      dayCountElement.textContent = daycount;
+
+    if (exposition) {
+      el.innerHTML = exposition.render();
     } else {
-      console.error("Error: Element with id 'daycount' not found.");
+      el.textContent = ''; // 該当がなければ空に
     }
   }
 }

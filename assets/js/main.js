@@ -25,6 +25,7 @@ async function main() {
   Facility.addGeoJSON(geojsons, map);
 
   NDay.setDayCount();
+  NDay.setNDayCountry();
 
   const params = new URLSearchParams(location.search);
   const id = params.get("facility");
