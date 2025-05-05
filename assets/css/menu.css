@@ -1,0 +1,32 @@
+#menu-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /*background: white;*/
+  padding: 5px 15px;
+  font-size: 24px;
+  /*border-radius: 5px;*/
+  cursor: pointer;
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
+}
+
+#slide-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-105%);
+  transition: transform 0.3s ease;
+  width: fit-content;
+  max-width: 85vw;
+  height: 100vh;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 999;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#slide-menu.open {
+  transform: translateX(0);
+}

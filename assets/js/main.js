@@ -12,6 +12,7 @@ async function main() {
   L.control.zoom({ position: 'topright' }).addTo(map); // position change
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  //L.tileLayer('ihttps://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
@@ -23,6 +24,7 @@ async function main() {
 
   Facility.fromTsv(facilityTsv);
   Exposition.fromTsv(expositionTsv);
+  Exposition.makeMenuIndex();
   Facility.addExpositions();
   Facility.addGeoJSON(geojsons, map);
 

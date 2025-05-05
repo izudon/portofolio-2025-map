@@ -155,6 +155,22 @@ export class Exposition extends Entity {
     return this.collection;
   }
 
+  static makeMenuIndex() {
+    const ul = document.getElementById("country-list");
+  
+    if (!ul) {
+      console.error("Error: #country-list not found.");
+      return;
+    }
+  
+    const html = Object.values(this.collection)
+      .filter(e => e.id.startsWith("a-"))
+      .map(e => `<li>${e.sign} ${e.name_ja}</li>`)
+      .join("");
+  
+    ul.innerHTML = html;
+  }
+
   static makeNdayMap() {
     this.ndayMap = {};
 
