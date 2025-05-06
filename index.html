@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <title>Leaflet GeoJSON 強調表示</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&family=Noto+Serif+JP&family=Noto+Serif+KR&family=Noto+Serif+SC&family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/leaflet/leaflet.css" />
-  <link rel="stylesheet" href="./assets/css/popups.css" />
+  <link rel="stylesheet" href="./assets/css/popups.css?v=1005" />
   <link rel="stylesheet" href="./assets/css/greetings.css" />
   <link rel="stylesheet" href="./assets/css/menu.css" />
   <style>
@@ -27,7 +28,7 @@
   <div id="menu-button">&#9776;</div>
 
   <div id="slide-menu">
-    <div class="head">close</div>
+    <div class="head" id="menu-close-button">close</div>
     <div class="body">
       <ul id="country-list">
       </ul>
@@ -50,6 +51,10 @@
     document.getElementById('menu-button').addEventListener('click', () => {
       const menu = document.getElementById('slide-menu');
       menu.classList.toggle('open');
+    });
+    document.getElementById('menu-close-button').addEventListener('click', () => {
+      const menu = document.getElementById('slide-menu');
+      menu.classList.remove('open');
     });
   </script>
 </body>

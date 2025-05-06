@@ -8,4 +8,42 @@
   line-height: 1.3;
   color: #333;
   margin: 8px 12px;
+
+  font-family:
+    'Zen Old Mincho',        /* 第一優先：日本語明朝（Google Fonts） */
+    'Noto Serif JP',         /* 日本語明朝（Google Fonts） */
+    'Noto Serif SC',         /* 中国語簡体字（Google Fonts） */
+    'Noto Serif TC',         /* 中国語繁体字（Google Fonts） */
+    'Noto Serif KR',         /* 韓国語（Google Fonts） */
+    'Noto Serif',            /* 欧文 */
+    'Noto Color Emoji',      /* Linux/Android emoji */
+    'Apple Color Emoji',     /* iOS/macOS emoji */
+    'Segoe UI Emoji',        /* Windows emoji */
+    serif;
+  font-size: 18px;
 }
+
+.leaflet-popup-content ul {
+  margin: 5px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.leaflet-popup-content li {
+  display: flex;
+  align-items: flex-start;  /* 上揃え（国名が複数行でも上揃え） */
+  gap: 0.2em;               /* アイコンと国名の間隔 */
+  padding: 0 0.5em 0 0.0em;
+}
+
+.leaflet-popup-content li .sign {
+  flex: 0 0 auto;           /* 幅固定 */
+  width: 1.5em;             /* 必要に応じて調整（フォントサイズに応じて） */
+  text-align: center;       /* 国旗が中央に来るように */
+}
+
+.leaflet-popup-content li .name {
+  flex: 1;                  /* 残りを使用して折り返し */
+  word-break: break-word;   /* 長い単語でも折り返す */
+}
+

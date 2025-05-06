@@ -73,14 +73,17 @@ export default class Facility extends Entity {
 
   render() {
     const hasMultiple = this.expositions.length !== 1;
-    const titleHtml = hasMultiple ? `<div>${this.name_ja}</div>` : "";
+    const titleHtml = hasMultiple ?
+      `<div class="head">${this.name_ja}</div>` : "";
   
     let expositionsHtml = "";
     if (this.expositions.length > 0) {
       expositionsHtml = `
-        <ul>
-          ${this.expositions.map(e => e.li()).join("")}
-        </ul>
+        <div class="body">
+          <ul>
+            ${this.expositions.map(e => e.li()).join("")}
+          </ul>
+        </div>
       `;
     }
   

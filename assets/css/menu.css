@@ -15,20 +15,31 @@
   position: fixed;
   top: 0;
   left: 0;
+  width: 280px;
+  height: 100vh;
+  transform: translateX(-105%);
+  transition: transform 0.3s ease;
+  background: #f8f8f8;
+  z-index: 999;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  z-index: 999;
-  transform: translateX(-105%);
-  transition: transform 0.3s ease;
-  /*width: fit-content;*/
-  width: 15em;
-  max-width: 85vw;
-  height: 100vh;
-  background-color: #f8f8f8;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
+
+  font-family:
+    'Zen Old Mincho',        /* 第一優先：日本語明朝（Google Fonts） */
+    'Noto Serif JP',         /* 日本語明朝（Google Fonts） */
+    'Noto Serif SC',         /* 中国語簡体字（Google Fonts） */
+    'Noto Serif TC',         /* 中国語繁体字（Google Fonts） */
+    'Noto Serif KR',         /* 韓国語（Google Fonts） */
+    'Noto Serif',            /* 欧文 */
+    'Noto Color Emoji',      /* Linux/Android emoji */
+    'Apple Color Emoji',     /* iOS/macOS emoji */
+    'Segoe UI Emoji',        /* Windows emoji */
+    serif;
+  font-size: 18px;
 }
 
 #slide-menu.open {
@@ -55,18 +66,37 @@
 }
 
 #slide-menu li {
-  padding-left: 2.5em;
-  text-indent: -1.6em;
-  padding-right: 0.5em
+  display: flex;
+  align-items: flex-start;  /* 上揃え（国名が複数行でも上揃え） */
+  gap: 0.2em;               /* アイコンと国名の間隔 */
+  padding: 0 1.0em 0 0.5em;
+}
+
+#slide-menu li .sign {
+  flex: 0 0 auto;           /* 幅固定 */
+  width: 1.5em;             /* 必要に応じて調整（フォントサイズに応じて） */
+  text-align: center;       /* 国旗が中央に来るように */
+}
+
+#slide-menu li .name {
+  flex: 1;                  /* 残りを使用して折り返し */
+  word-break: break-word;   /* 長い単語でも折り返す */
 }
 
 #slide-menu li.exhibitor {
   cursor: pointer;
+}
+
+#slide-menu li.exhibitor .name {
   color: black;
 }
 
 #slide-menu li.non-exhibitor {
   cursor: default;
+}
+
+#slide-menu li.non-exhibitor .name {
   color: #bbb;
 }
+
 
