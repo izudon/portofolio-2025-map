@@ -35,6 +35,11 @@ export default class Exposition extends Entity {
       const fid = li.dataset.fid;
       if (fid && typeof Facility?.raise === "function") {
         Facility.raise(fid);
+
+        const menu = document.getElementById('slide-menu');
+        if (menu) {
+          menu.classList.toggle('open');
+        }
       }
     });
   }
