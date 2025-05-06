@@ -15,18 +15,47 @@
   position: fixed;
   top: 0;
   left: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 999;
   transform: translateX(-105%);
   transition: transform 0.3s ease;
-  width: fit-content;
+  /*width: fit-content;*/
+  width: 15em;
   max-width: 85vw;
   height: 100vh;
   background-color: #f8f8f8;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  z-index: 999;
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 #slide-menu.open {
   transform: translateX(0);
+}
+
+#slide-menu .head {
+  flex: 0 0 auto;
+  padding: 10px;
+  text-align: right;
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+}
+
+#slide-menu .body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+#slide-menu ul {
+  margin: 5px 0;
+  padding: 0;
+  list-style: none;
+}
+
+#slide-menu li {
+  padding-left: 2.5em;
+  text-indent: -1.6em;
+  padding-right: 0.5em
 }
