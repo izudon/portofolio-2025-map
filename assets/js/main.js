@@ -1,4 +1,6 @@
-import { Facility, Exposition, NDay } from './classes.js';
+import Facility from './Facility.js';
+import Exposition from './Exposition.js';
+import NDay from './NDay.js';
 
 async function main() {
   const map = L.map('map', {
