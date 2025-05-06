@@ -95,6 +95,15 @@ export class Facility extends Entity {
     }
   }
 
+  static raise(id) {
+    const facility = this.collection[id];
+    if (facility) {
+      facility.raise();
+    } else {
+      console.warn(`Facility.raise: not found the facility of the ID "${id}"`);
+    }
+  }
+
   render() {
     const hasMultiple = this.expositions.length !== 1;
     const titleHtml = hasMultiple ? `<div>${this.name_ja}</div>` : "";
@@ -165,10 +174,30 @@ export class Exposition extends Entity {
   
     const html = Object.values(this.collection)
       .filter(e => e.id.startsWith("a-"))
-      .map(e => `<li>${e.sign} ${e.name_ja}</li>`)
+      .map(e => {
+        const cls = e.fid ? "exhibitor" : "non-exhibitor";
+        const dataAttr = e.fid ? `data-fid="${e.fid}"` : "";
+  
+        return `
+          <li class="${cls}" ${dataAttr}>
+            <span class="sign">${e.sign}</span>
+            <span class="name">${e.name_ja}</span>
+          </li>
+        `;
+      })
       .join("");
   
     ul.innerHTML = html;
+
+    ul.addEventListener("click", (event) => {
+      const li = event.target.closest("li.exhibitor");
+      if (!li) return;
+
+      const fid = li.dataset.fid;
+      if (fid && typeof Facility?.raise === "function") {
+        Facility.raise(fid);
+      }
+    });
   }
 
   static makeNdayMap() {

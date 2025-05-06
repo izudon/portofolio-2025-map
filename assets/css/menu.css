@@ -59,3 +59,14 @@
   text-indent: -1.6em;
   padding-right: 0.5em
 }
+
+#slide-menu li.exhibitor {
+  cursor: pointer;
+  color: black;
+}
+
+#slide-menu li.non-exhibitor {
+  cursor: default;
+  color: #bbb;
+}
+
