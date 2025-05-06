@@ -23,17 +23,7 @@ export default class Exposition extends Entity {
   
     const html = Object.values(this.collection)
       .filter(e => e.id.startsWith("a-"))
-      .map(e => {
-        const cls = e.fid ? "exhibitor" : "non-exhibitor";
-        const dataAttr = e.fid ? `data-fid="${e.fid}"` : "";
-  
-        return `
-          <li class="${cls}" ${dataAttr}>
-            <span class="sign">${e.sign}</span>
-            <span class="name">${e.name_ja}</span>
-          </li>
-        `;
-      })
+      .map(e => e.li())
       .join("");
   
     ul.innerHTML = html;
@@ -85,12 +75,15 @@ export default class Exposition extends Entity {
     return this.fidMap[fid] || [];
   }
 
-  render() {
+  li() {
+    const cls = this.fid ? "exhibitor" : "non-exhibitor";
+    const dataAttr = this.fid ? `data-fid="${this.fid}"` : "";
+
     return `
-      <div>
-        <span>${this.sign}</span>
-	<span>${this.name_ja}</span>
-      </div>
+      <li class="${cls}" ${dataAttr}>
+        <span class="sign">${this.sign}</span>
+        <span class="name">${this.name_ja}</span>
+      </li>
     `;
   }
 }

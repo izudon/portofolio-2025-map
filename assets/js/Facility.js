@@ -78,9 +78,9 @@ export default class Facility extends Entity {
     let expositionsHtml = "";
     if (this.expositions.length > 0) {
       expositionsHtml = `
-        <div>
-          ${this.expositions.map(e => e.render()).join("")}
-        </div>
+        <ul>
+          ${this.expositions.map(e => e.li()).join("")}
+        </ul>
       `;
     }
   
