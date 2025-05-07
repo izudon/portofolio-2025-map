@@ -1,316 +1,316 @@
-id	sign	name_ja	fid
-a-iceland	🇮🇸	アイスランド	P36
-a-ireland	🇮🇪	アイルランド	P01
-a-azerbaijan	🇦🇿	アゼルバイジャン	C07
-a-afghanistan	🇦🇫	アフガニスタン	
-a-usa	🇺🇸	アメリカ	P11
-a-uae	🇦🇪	アラブ首長国連邦	P18
-a-algeria	🇩🇿	アルジェリア	S05
-a-argentine	🇦🇷	アルゼンチン	
-a-albania	🇦🇱	アルバニア	
-a-armenia	🇦🇲	アルメニア	C05
-a-angola	🇦🇴	アンゴラ	S23
-a-antigua	🇦🇬	アンティグア・バーブーダ	S14
-a-andorra	🇦🇩	アンドラ	
-a-yemen	🇾🇪	イエメン	P03
-a-israel	🇮🇱	イスラエル	S01
-a-italy	🇮🇹	イタリア	S09
-a-iraq	🇮🇶	イラク	
-a-iran	🇮🇷	イラン	
-a-india	🇮🇳	インド	C17
-a-indonesia	🇮🇩	インドネシア	C16
-a-uganda	🇺🇬	ウガンダ	P03
-a-ukraine	🇺🇦	ウクライナ	S01
-a-uzbekistan	🇺🇿	ウズベキスタン	C18
-a-uruguay	🇺🇾	ウルグアイ	S01
-a-uk	🇬🇧	英国	S22
-a-ecuador	🇪🇨	エクアドル	S14
-a-egypt	🇪🇬	エジプト	C22
-a-estonia	🇪🇪	エストニア	
-a-eswatini	🇸🇿	エスワティニ	P03
-a-ethiopia	🇪🇹	エチオピア	C23
-a-eritrea	🇪🇷	エリトリア	
-a-elsalvador	🇸🇻	エルサルバドル	
-a-australia	🇦🇺	オーストラリア	C15
-a-austria	🇦🇹	オーストリア	P23
-a-oman	🇴🇲	オマーン	S15
-a-netherlands	🇳🇱	オランダ	S13
-a-ghana	🇬🇭	ガーナ	P03
-a-capeverde	🇨🇻	カーボベルデ	C23
-a-guyana	🇬🇾	ガイアナ	C23
-a-kazakhstan	🇰🇿	カザフスタン	C05
-a-qatar	🇶🇦	カタール	P17
-a-canada	🇨🇦	カナダ	P19
-a-gabon	🇬🇦	ガボン	S01
-a-cameroon	🇨🇲	カメルーン	S14
-a-gambia	🇬🇲	ガンビア	C23
-a-cambodia	🇰🇭	カンボジア	S04
-a-macedonia	🇲🇰	北マケドニア	P03
-a-guinea	🇬🇳	ギニア	S14
-a-guinea_b	🇬🇼	ギニアビサウ	P03
-a-cyprus	🇨🇾	キプロス	
-a-cuba	🇨🇺	キューバ	S14
-a-greece	🇬🇷	ギリシャ	
-a-kiribati	🇰🇮	キリバス	
-a-kyrgyz	🇰🇬	キルギス	P03
-a-guatemala	🇬🇹	グアテマラ	S01
-a-kuwait	🇰🇼	クウェート	P27
-a-cook	🇨🇰	クック諸島	
-a-grenada	🇬🇩	グレナダ	P03
-a-croatia	🇭🇷	クロアチア	S01
-a-kenya	🇰🇪	ケニア	P03
-a-cote_d	🇨🇮	コートジボワール	C23
-a-costarica	🇨🇷	コスタリカ	
-a-kosovo	🇽🇰	コソボ	P03
-a-comoros	🇰🇲	コモロ	P03
-a-colombia	🇨🇴	コロンビア	P21
-a-congokyo	🇨🇬	コンゴ共和国	
-a-congomin	🇨🇩	コンゴ民主共和国	S14
-a-saudi	🇸🇦	サウジアラビア	C14
-a-samoa	🇼🇸	サモア	P03
-a-stp	🇸🇹	サントメ・プリンシペ	S14
-a-zambia	🇿🇲	ザンビア	C23
-a-sanmarino_r	🇸🇲	サンマリノ	S01
-a-s_leone	🇸🇱	シエラレオネ	C23
-a-djibouti	🇩🇯	ジブチ	C23
-a-jamaica	🇯🇲	ジャマイカ	C23
-a-georgia	🇬🇪	ジョージア	
-a-syria	🇸🇾	シリア	
-a-singapore	🇸🇬	シンガポール	S11
-a-zimbabwe	🇿🇼	ジンバブエ	C23
-a-switzerland	🇨🇭	スイス	P22
-a-sweden	🇸🇪	スウェーデン	P36
-a-sudan	🇸🇩	スーダン	S14
-a-spain	🇪🇸	スペイン	C13
-a-suriname	🇸🇷	スリナム	P03
-a-srilanka	🇱🇰	スリランカ	P03
-a-slovak	🇸🇰	スロバキア	S01
-a-slovenia	🇸🇮	スロベニア	S01
-a-seychelles	🇸🇨	セーシェル	P03
-a-eq_guinea	🇬🇶	赤道ギニア	S14
-a-senegal	🇸🇳	セネガル	C21
-a-serbia	🇷🇸	セルビア	C19
-a-scn	🇰🇳	セントクリストファー・ネイビス	P03
-a-svg	🇻🇨	セントビンセントおよびグレナディーン諸島	C23
-a-s_lucia	🇱🇨	セントルシア	P03
-a-somali	🇸🇴	ソマリア	C23
-a-solomon	🇸🇧	ソロモン諸島	P03
-a-thailand	🇹🇭	タイ	C12
-a-korea	🇰🇷	大韓民国	C04
-a-tajikistan	🇹🇯	タジキスタン	S14
-a-tanzania	🇹🇿	タンザニア	C23
-a-czech	🇨🇿	チェコ	P38
-a-chad	🇹🇩	チャド	C23
-a-car	🇨🇫	中央アフリカ共和国	C23
-a-china	🇨🇳	中華人民共和国	P28
-a-tunisia	🇹🇳	チュニジア	S03
-a-chile	🇨🇱	チリ	S02
-a-tuvalu	🇹🇻	ツバル	C23
-a-denmark	🇩🇰	デンマーク	P36
-a-germany	🇩🇪	ドイツ	C03
-a-togo	🇹🇬	トーゴ	S14
-a-c_dominica	🇩🇲	ドミニカ国	
-a-dominican_r	🇩🇴	ドミニカ共和国	C23
-a-trinidad	🇹🇹	トリニダード・トバゴ	P03
-a-turkmenistan	🇹🇲	トルクメニスタン	P35
-a-turkey	🇹🇷	トルコ	C11
-a-tonga	🇹🇴	トンガ	P03
-a-nigeria	🇳🇬	ナイジェリア	S14
-a-nauru	🇳🇷	ナウル	C23
-a-namibia	🇳🇦	ナミビア	
-a-niue	🇳🇺	ニウエ	
-a-nicaragua	🇳🇮	ニカラグア	
-a-niger	🇳🇪	ニジェール	
-a-japan	🇯🇵	日本	E10
-a-nz	🇳🇿	ニュージーランド	
-a-nepal	🇳🇵	ネパール	C01
-a-norway	🇳🇴	ノルウェー	P36
-a-bahrain	🇧🇭	バーレーン	P34
-a-haiti	🇭🇹	ハイチ	C23
-a-pakistan	🇵🇰	パキスタン	S14
-a-vatican	🇻🇦	バチカン市国	S09
-a-panama	🇵🇦	パナマ	S01
-a-vanuatu	🇻🇺	バヌアツ	P03
-a-bahama	🇧🇸	バハマ	
-a-png	🇵🇬	パプアニューギニア	P03
-a-palau	🇵🇼	パラオ	P03
-a-paraguay	🇵🇾	パラグアイ	C23
-a-barbados	🇧🇧	バルバドス	P03
-a-plo	🇵🇸	パレスチナ	S14
-a-plo	🇵🇸	パレスチナ	
-a-hungary	🇭🇺	ハンガリー	S16
-a-bangladesh	🇧🇩	バングラデシュ	C20
-a-easttimor	🇹🇱	東ティモール	C23
-a-fiji	🇫🇯	フィジー	C23
-a-philippines	🇵🇭	フィリピン	P09
-a-finland	🇫🇮	フィンランド	P36
-a-bhutan	🇧🇹	ブータン	S14
-a-brazil	🇧🇷	ブラジル	P26
-a-france	🇫🇷	フランス	P12
-a-bulgaria	🇧🇬	ブルガリア	S12
-a-burkina	🇧🇫	ブルキナファソ	S14
-a-brunei	🇧🇳	ブルネイ	C05
-a-brundi	🇧🇮	ブルンジ	P03
-a-vietnam	🇻🇳	ベトナム	P15
-a-benin	🇧🇯	ベナン	C23
-a-venezuela	🇻🇪	ベネズエラ	
-a-belarus	🇧🇾	ベラルーシ	
-a-belize	🇧🇿	ベリーズ	S14
-a-peru	🇵🇪	ペルー	P05
-a-belgium	🇧🇪	ベルギー	S08
-a-poland	🇵🇱	ポーランド	S20
-a-bosnia_h	🇧🇦	ボスニア・ヘルツェゴビナ	
-a-botswana	🇧🇼	ボツワナ	
-a-bolivia	🇧🇴	ボリビア	P03
-a-portugal	🇵🇹	ポルトガル	P20
-a-honduras	🇭🇳	ホンジュラス	S14
-a-marshall	🇲🇭	マーシャル諸島	S14
-a-madagascar	🇲🇬	マダガスカル	S14
-a-malawi	🇲🇼	マラウイ	P03
-a-mali	🇲🇱	マリ	S14
-a-malta	🇲🇹	マルタ	P37
-a-malaysia	🇲🇾	マレーシア	P02
-a-micronesia	🇫🇲	ミクロネシア連邦	C23
-a-s_africa	🇿🇦	南アフリカ共和国	
-a-s_sudan	🇸🇸	南スーダン	S14
-a-myanmar	🇲🇲	ミャンマー	
-a-mexico	🇲🇽	メキシコ	
-a-mauritius	🇲🇺	モーリシャス	P03
-a-mauritania	🇲🇷	モーリタニア	C23
-a-mozambique	🇲🇿	モザンビーク	P08
-a-monaco	🇲🇨	モナコ	C10
-a-maldives	🇲🇻	モルディブ	
-a-moldova	🇲🇩	モルドバ	S14
-a-morocco	🇲🇦	モロッコ	
-a-mongolia	🇲🇳	モンゴル	S14
-a-montenegro	🇲🇪	モンテネグロ	S01
-a-jordan	🇯🇴	ヨルダン	P04
-a-laos	🇱🇦	ラオス	S14
-a-latvia	🇱🇻	ラトビア	S06
-a-lithuania	🇱🇹	リトアニア	S06
-a-libya	🇱🇾	リビア	
-a-liechtenstein	🇱🇮	リヒテンシュタイン	
-a-liberia	🇱🇷	リベリア	S14
-a-romania	🇷🇴	ルーマニア	S21
-a-luxembourg	🇱🇺	ルクセンブルク	C02
-a-rwanda	🇷🇼	ルワンダ	P03
-a-lesotho	🇱🇸	レソト	C23
-a-lebanon	🇱🇧	レバノン	
-a-russia	🇷🇺	ロシア	
-a-n_korea	🇰🇵	北朝鮮	
-a-taiwan	🇹🇼	台湾	W02
-a-hongkong	🇭🇰	香港	
-a-macao	🇲🇴	マカオ	
-a-n_pole	🏁	北極	
-a-s_pole	🇦🇶	南極	
-a-eu	🇪🇺	欧州連合（EU）	S07
-a-asean	🌐	東南アジア諸国連合（ASEAN）	P29
-a-un	🇺🇳	国際連合（UN）	P30
-a-redcr	🌐	国際赤十字・赤新月運動	P31
-a-iter	🌐	イーター国際核融合エネルギー機構（ITER）	P29
-a-istc	🌐	国際科学技術センター（ISTC）	P29
-a-isa	🌐	太陽に関する国際的な同盟（ISA）	P29
-a-museum	🌐	万博博物館	P29
-s-miyata	📝	Better Co-Being（宮田 裕章）	X01
-s-ishiguro	📝	いのちの未来（石黒 浩）	X02
-s-nakajima	📝	いのちの遊び場 クラゲ館（中島 さち子）	X03
-s-ochiai	📝	null2（落合 陽一）	X04
-s-fukuoka	📝	いのち動的平衡館（福岡 伸一）	X05
-s-kawamori	📝	いのちめぐる冒険（河森 正治）	X06
-s-koyama	📝	EARTH MART（小山 薫堂）	X07
-s-kawase	📝	Dialogue Theater －いのちのあかし－（河瀨 直美）	X08
-d-japanese-government	🏢	日本館	E10
-d-womens-pv	🏢	ウーマンズパビリオン in collaboration with Cartier	E09
-d-osaka-pv	🏢	大阪ヘルスケアパビリオン Nest for Reborn	E02
-d-kansai-pv	🏢	関西パビリオン	E01
-d-ntt	🏢	NTT パビリオン	E03
-d-electric	🏢	電力館 可能性のタマゴたち	E08
-d-sumitomo	🏢	住友館	E07
-d-panasonic	🏢	パナソニックグループパビリオン「ノモの国」	E06
-d-mitsubishi	🏢	三菱未来館	E05
-d-yoshimoto	🏢	よしもと waraii myraii館	W10
-d-pasona	🏢	PASONA NETUREVERSE	W09
-d-zeri	🏢	BLUE OCEAN DOME（ブルーオーシャン・ドーム）	W06
-d-bandai-namco	🏢	GUNDAM NEXT FUTURE PAVILION	W07
-d-tamayama	🏢	TECH WORLD	W02
-d-gas	🏢	ガスパビリオン おばけワンダーランド	W03
-d-iida	🏢	飯田グループｘ大阪公立大学共同出展館	W04
-d-ora	🏢	ORA外食パビリオン『宴〜UTAGE〜』	W05
-wc-d01	🚻	トイレ（夢洲の庭）	WC01
-wc-d02	🚻	トイレ（残念石）	WC02
-wc-d03	🚻	トイレ（空気膜）	WC03
-wc-d04	🚻	トイレ（土の壁）	WC04
-wc-d05	🚻	トイレ（積み木）	WC05
-wc-d06	🚻	トイレ（水の循環）	WC06
-wc-d07	🚻	トイレ（蜃気楼）	WC07
-wc-d08	🚻	トイレ（多様性）	WC08
-mc-01	🍙	ローソン大阪・関西万博店	E81
-mc-02	☕	ローソンカフェ大阪・関西万博店	E81
-mc-03	🎁	2025大阪・関西万博 会場内 オフィシャルストア 東ゲート店 MARUZEN JUNKUDO	E81
-mc-04	🎁	2025大阪・関西万博 会場内 オフィシャルストア 東ゲート店 大松松坂屋百貨店	E81
-mc-05	☕	人と地球とショートケーキと FUJIYA EXPO 2025 STORE	E83
-mc-06	🎁	Souvenir JAPAN EAST 大阪・関西万博店	E83
-mc-07	🎁	おいしい老舗のたからばこ 大阪産（もん）名品	E83
-mc-08	🎁	京丹波	E83
-mc-09	🎁	北陸お花ごっつおマルシェ	E83
-mc-10	🎁	Korea mart【韓国市場】	E82
-mc-11	🍴	インドカレーの店	E82
-mc-12	🎁	ソウル Live!	E82
-mc-13	🍴	讃岐うどん	E82
-mc-14	🎁	大阪ハラルムガルEXPO2025店	E82
-mc-15	🍴	PAULANER IMBISS（樽生ドイツビールと洋食の店）	E82
-mc-16	🎁	SOFRA produced by Mrs. Istanbul	E82
-mc-17	🎁	景福宮	E82
-mc-18	🍴	SAIGON 屋台	E82
-mc-19	🎁	SOLEIL EXPO2025 STORE（2F）	W01
-mc-20	🎁	飲食・物販店舗（2F）	W01
-mc-21	🎁	飲食・物販店舗（2F）	W01
-mc-22	🎁	遊んでい館？（2F）	W01
-mc-23	🎁	ピザ・ダ・マリオ（2F）	W01
-mc-24	🍴	河童ラーメン本舗 大阪・関西万博店（2F）	W01
-mc-25	🍴	アフリカダイニングホール PANAF'（2F）	W01
-mc-26	🍴	サスティナブルフードコート 大阪のれんめぐり〜食と祭 EXPO〜	W01
-mc-27	🎁	飲食・物販店舗	W01
-mc-28	☕	K-Restaurant&Cafe'	W01
-mc-29	🍴	つくもうどんEXPRESS 大阪・関西万博店	W01
-mc-30	🍴	魯園菜館 大阪・関西万博店	W01
-mc-31	🎁	おこしやす 京の小路 〜Kyoto's Crafts & Foods〜	W01
-mc-32	🎁	K-POP SHOP 韓流スターワールド	W01
-mc-33	🎁	アニメイト大阪・関西万博店	W01
-mc-34	☕	f fields	F81
-mc-35	🍴	とんかつ乃ぐち	F81
-mc-36	🍴	EARTH SWEETS 〜Presented by Takeshita Seika〜	F81
-mc-37	🍴	GF RAMEN LAB 大阪・関西万博店	F81
-mc-38	🍴	テラスニチレイ	F81
-mc-39	☕	THEO'S CAFE'	F81
-mc-40	☕	SUNTORY PARK CAFE ⭐️	S81
-mc-41	🎁	水空 SUIKUU（2F） ⭐️	S81
-mc-42	🎁	近代卒の魚と紀州の恵み 近畿大学水産研究所 大阪・関西万博ウォータープラザ店（2F） ⭐️	S81
-mc-43	🍙	セブン-イレブン ウォータープラザ店 ⭐️	S81
-mc-44	🎁	URBAN RESEARCH EXPO2025 STORE	S81
-mc-45	🍴	グランドフードコート	L81
-mc-46	🍴	牛カツ京都勝牛	L81
-mc-47	🍴	エスニックフュージョンレストラン	L81
-mc-48	🍙	アカカベ 風の広場店	L81
-mc-49	🍴	好きやねん大阪 フードコート WEST SIDE	L81
-mc-50	🍴	ディワンキッチン	L81
-mc-51	🎁	Asia物産	L81
-mc-52	🎁	Souvenir JAPAN WEST 大阪・関西万博店	L81
-mc-53	🍙	セブン-イレブン 西ゲート店 ⭐️	W81
-mc-54	🎁	KANSAIマルシェいちびり庵	W81
-mc-55	☕	菓匠 芭蕉堂 和スイーツカフェ	W81
-mc-56	☕	神戸養蜂場カフェ	W81
-mc-57	🍴	のり結び（大森屋おむすび専門店）	W81
-mc-58	🎁	2025大阪・関西万博 会場内 オフィシャルストア 西ゲート店 JR西日本グループ	W81
-mc-59	🎁	2025大阪・関西万博 会場内 オフィシャルストア 西ゲート店 KINTETSU	W81
-mc-60	🍴	醗酵食堂 Hasshoku	P81
-mc-61	🎁	MARE produced by Mrs. Istanbul	P81
-mc-62	🍙	ファミリーマート 大阪・関西万博店	P81
-mc-63	🎁	felissimore（フェリシモっと）大阪・関西万博店	P81
-mc-64	🍴	好きやねん大阪 フードコート EAST SIDE（2F）	P81
-mc-65	🍴	ラウンジ＆ダイニング	E14
-mc-66	🍴	くら寿司 大阪・関西万博店 ⭐️	L82
-mc-67	🍴	スシロー 未来型万博店 ⭐️	F82
-mc-68	🍴	MANEKI FUTURE STUDIO JAPAN	F83
-mc-69	🍴	らぽっぽファーム〜おいもとイチゴとりんごの farm to table〜	F84
-mc-70	🍴	月化粧ｘうなぎパイ 大阪・関西万博店	P82
+id	sign	name_ja	fid	nday	n_ja
+a-iceland	🇮🇸	アイスランド	P36	47	1010
+a-ireland	🇮🇪	アイルランド	P01	63	1020
+a-azerbaijan	🇦🇿	アゼルバイジャン	C07	54	1030
+a-afghanistan	🇦🇫	アフガニスタン			1040
+a-usa	🇺🇸	アメリカ	P11	98	1050
+a-uae	🇦🇪	アラブ首長国連邦	P18	160	1060
+a-algeria	🇩🇿	アルジェリア	S05	89	1070
+a-argentine	🇦🇷	アルゼンチン			1080
+a-albania	🇦🇱	アルバニア			1090
+a-armenia	🇦🇲	アルメニア	C05	146	1100
+a-angola	🇦🇴	アンゴラ	S23	108	1110
+a-antigua	🇦🇬	アンティグア・バーブーダ	S14	169	1120
+a-andorra	🇦🇩	アンドラ			1130
+a-yemen	🇾🇪	イエメン	P03	46	1140
+a-israel	🇮🇱	イスラエル	S01		1150
+a-italy	🇮🇹	イタリア	S09	153	1160
+a-iraq	🇮🇶	イラク			1170
+a-iran	🇮🇷	イラン			1180
+a-india	🇮🇳	インド	C17	125	1190
+a-indonesia	🇮🇩	インドネシア	C16	45	1200
+a-uganda	🇺🇬	ウガンダ	P03	177	1210
+a-ukraine	🇺🇦	ウクライナ	S01	115	1220
+a-uzbekistan	🇺🇿	ウズベキスタン	C18	142	1230
+a-uruguay	🇺🇾	ウルグアイ	S01	66	1240
+a-uk	🇬🇧	英国	S22	40	1250
+a-ecuador	🇪🇨	エクアドル	S14		1260
+a-egypt	🇪🇬	エジプト	C22	102	1270
+a-estonia	🇪🇪	エストニア			1280
+a-eswatini	🇸🇿	エスワティニ	P03	52	1290
+a-ethiopia	🇪🇹	エチオピア	C23	174	1300
+a-eritrea	🇪🇷	エリトリア			1310
+a-elsalvador	🇸🇻	エルサルバドル			1320
+a-australia	🇦🇺	オーストラリア	C15	144	1330
+a-austria	🇦🇹	オーストリア	P23	41	1340
+a-oman	🇴🇲	オマーン	S15	161	1350
+a-netherlands	🇳🇱	オランダ	S13	39	1360
+a-ghana	🇬🇭	ガーナ	P03	152	1370
+a-capeverde	🇨🇻	カーボベルデ	C23	181	1380
+a-guyana	🇬🇾	ガイアナ	C23	15	1390
+a-kazakhstan	🇰🇿	カザフスタン	C05	120	1400
+a-qatar	🇶🇦	カタール	P17	87	1410
+a-canada	🇨🇦	カナダ	P19	35	1420
+a-gabon	🇬🇦	ガボン	S01	105	1430
+a-cameroon	🇨🇲	カメルーン	S14	157	1440
+a-gambia	🇬🇲	ガンビア	C23	129	1450
+a-cambodia	🇰🇭	カンボジア	S04	84	1460
+a-macedonia	🇲🇰	北マケドニア	P03	19	1470
+a-guinea	🇬🇳	ギニア	S14	59	1480
+a-guinea_b	🇬🇼	ギニアビサウ	P03	28	1490
+a-cyprus	🇨🇾	キプロス			1500
+a-cuba	🇨🇺	キューバ	S14	104	1510
+a-greece	🇬🇷	ギリシャ			1520
+a-kiribati	🇰🇮	キリバス			1530
+a-kyrgyz	🇰🇬	キルギス	P03	55	1540
+a-guatemala	🇬🇹	グアテマラ	S01		1550
+a-kuwait	🇰🇼	クウェート	P27	68	1560
+a-cook	🇨🇰	クック諸島			1570
+a-grenada	🇬🇩	グレナダ	P03	7	1580
+a-croatia	🇭🇷	クロアチア	S01	162	1590
+a-kenya	🇰🇪	ケニア	P03	73	1600
+a-cote_d	🇨🇮	コートジボワール	C23	62	1610
+a-costarica	🇨🇷	コスタリカ			1620
+a-kosovo	🇽🇰	コソボ	P03	60	1630
+a-comoros	🇰🇲	コモロ	P03	122	1640
+a-colombia	🇨🇴	コロンビア	P21	99	1650
+a-congokyo	🇨🇬	コンゴ共和国			1660
+a-congomin	🇨🇩	コンゴ民主共和国	S14	79	1670
+a-saudi	🇸🇦	サウジアラビア	C14	164	1680
+a-samoa	🇼🇸	サモア	P03	57	1690
+a-stp	🇸🇹	サントメ・プリンシペ	S14	170	1700
+a-zambia	🇿🇲	ザンビア	C23	86	1710
+a-sanmarino_r	🇸🇲	サンマリノ	S01	21	1720
+a-s_leone	🇸🇱	シエラレオネ	C23		1730
+a-djibouti	🇩🇯	ジブチ	C23	176	1740
+a-jamaica	🇯🇲	ジャマイカ	C23	116	1750
+a-georgia	🇬🇪	ジョージア			1760
+a-syria	🇸🇾	シリア			1770
+a-singapore	🇸🇬	シンガポール	S11	134	1780
+a-zimbabwe	🇿🇼	ジンバブエ	C23	95	1790
+a-switzerland	🇨🇭	スイス	P22	10	1800
+a-sweden	🇸🇪	スウェーデン	P36	32	1810
+a-sudan	🇸🇩	スーダン	S14	143	1820
+a-spain	🇪🇸	スペイン	C13	34	1830
+a-suriname	🇸🇷	スリナム	P03	71	1840
+a-srilanka	🇱🇰	スリランカ	P03	168	1850
+a-slovak	🇸🇰	スロバキア	S01	151	1860
+a-slovenia	🇸🇮	スロベニア	S01	167	1870
+a-seychelles	🇸🇨	セーシェル	P03	148	1880
+a-eq_guinea	🇬🇶	赤道ギニア	S14	94	1890
+a-senegal	🇸🇳	セネガル	C21	135	1900
+a-serbia	🇷🇸	セルビア	C19	156	1910
+a-scn	🇰🇳	セントクリストファー・ネイビス	P03	130	1920
+a-svg	🇻🇨	セントビンセントおよびグレナディーン諸島	C23	165	1930
+a-s_lucia	🇱🇨	セントルシア	P03	140	1940
+a-somali	🇸🇴	ソマリア	C23	175	1950
+a-solomon	🇸🇧	ソロモン諸島	P03	173	1960
+a-thailand	🇹🇭	タイ	C12		1970
+a-korea	🇰🇷	大韓民国	C04	31	1980
+a-tajikistan	🇹🇯	タジキスタン	S14	76	1990
+a-tanzania	🇹🇿	タンザニア	C23	43	2000
+a-czech	🇨🇿	チェコ	P38	103	2010
+a-chad	🇹🇩	チャド	C23	17	2020
+a-car	🇨🇫	中央アフリカ共和国	C23	111	2030
+a-china	🇨🇳	中華人民共和国	P28	90	2040
+a-tunisia	🇹🇳	チュニジア	S03	123	2050
+a-chile	🇨🇱	チリ	S02	30	2060
+a-tuvalu	🇹🇻	ツバル	C23	101	2070
+a-denmark	🇩🇰	デンマーク	P36	12	2080
+a-germany	🇩🇪	ドイツ	C03	69	2090
+a-togo	🇹🇬	トーゴ	S14	131	2100
+a-c_dominica	🇩🇲	ドミニカ国			2110
+a-dominican_r	🇩🇴	ドミニカ共和国	C23	133	2120
+a-trinidad	🇹🇹	トリニダード・トバゴ	P03	121	2130
+a-turkmenistan	🇹🇲	トルクメニスタン	P35	2	2140
+a-turkey	🇹🇷	トルコ	C11	11	2150
+a-tonga	🇹🇴	トンガ	P03	6	2160
+a-nigeria	🇳🇬	ナイジェリア	S14	74	2170
+a-nauru	🇳🇷	ナウル	C23	126	2180
+a-namibia	🇳🇦	ナミビア			2190
+a-niue	🇳🇺	ニウエ			2200
+a-nicaragua	🇳🇮	ニカラグア			2210
+a-niger	🇳🇪	ニジェール			2220
+a-japan	🇯🇵	日本	E10	82	2230
+a-nz	🇳🇿	ニュージーランド			2240
+a-nepal	🇳🇵	ネパール	C01	49	2250
+a-norway	🇳🇴	ノルウェー	P36	51	2260
+a-bahrain	🇧🇭	バーレーン	P34	159	2270
+a-haiti	🇭🇹	ハイチ	C23	182	2280
+a-pakistan	🇵🇰	パキスタン	S14	124	2290
+a-vatican	🇻🇦	バチカン市国	S09	78	2300
+a-panama	🇵🇦	パナマ	S01	147	2310
+a-vanuatu	🇻🇺	バヌアツ	P03	109	2320
+a-bahama	🇧🇸	バハマ			2330
+a-png	🇵🇬	パプアニューギニア	P03	100	2340
+a-palau	🇵🇼	パラオ	P03	16	2350
+a-paraguay	🇵🇾	パラグアイ	C23	37	2360
+a-barbados	🇧🇧	バルバドス	P03	158	2370
+a-plo	🇵🇸	パレスチナ	S14	50	2380
+a-plo	🇵🇸	パレスチナ		50	2380
+a-hungary	🇭🇺	ハンガリー	S16	42	2390
+a-bangladesh	🇧🇩	バングラデシュ	C20	29	2400
+a-easttimor	🇹🇱	東ティモール	C23	138	2410
+a-fiji	🇫🇯	フィジー	C23	166	2420
+a-philippines	🇵🇭	フィリピン	P09	56	2430
+a-finland	🇫🇮	フィンランド	P36	61	2440
+a-bhutan	🇧🇹	ブータン	S14	20	2450
+a-brazil	🇧🇷	ブラジル	P26	70	2460
+a-france	🇫🇷	フランス	P12	154	2470
+a-bulgaria	🇧🇬	ブルガリア	S12	36	2480
+a-burkina	🇧🇫	ブルキナファソ	S14	114	2490
+a-brunei	🇧🇳	ブルネイ	C05		2500
+a-brundi	🇧🇮	ブルンジ	P03	64	2510
+a-vietnam	🇻🇳	ベトナム	P15	150	2520
+a-benin	🇧🇯	ベナン	C23	139	2530
+a-venezuela	🇻🇪	ベネズエラ			2540
+a-belarus	🇧🇾	ベラルーシ			2550
+a-belize	🇧🇿	ベリーズ	S14	113	2560
+a-peru	🇵🇪	ペルー	P05	119	2570
+a-belgium	🇧🇪	ベルギー	S08	155	2580
+a-poland	🇵🇱	ポーランド	S20	172	2590
+a-bosnia_h	🇧🇦	ボスニア・ヘルツェゴビナ			2600
+a-botswana	🇧🇼	ボツワナ			2610
+a-bolivia	🇧🇴	ボリビア	P03	9	2620
+a-portugal	🇵🇹	ポルトガル	P20	23	2630
+a-honduras	🇭🇳	ホンジュラス	S14	180	2640
+a-marshall	🇲🇭	マーシャル諸島	S14	145	2650
+a-madagascar	🇲🇬	マダガスカル	S14	171	2660
+a-malawi	🇲🇼	マラウイ	P03	67	2670
+a-mali	🇲🇱	マリ	S14	112	2680
+a-malta	🇲🇹	マルタ	P37	96	2690
+a-malaysia	🇲🇾	マレーシア	P02	149	2700
+a-micronesia	🇫🇲	ミクロネシア連邦	C23	110	2710
+a-s_africa	🇿🇦	南アフリカ共和国			2720
+a-s_sudan	🇸🇸	南スーダン	S14	53	2730
+a-myanmar	🇲🇲	ミャンマー			2740
+a-mexico	🇲🇽	メキシコ			2750
+a-mauritius	🇲🇺	モーリシャス	P03	93	2760
+a-mauritania	🇲🇷	モーリタニア	C23	91	2770
+a-mozambique	🇲🇿	モザンビーク	P08	65	2780
+a-monaco	🇲🇨	モナコ	C10	77	2790
+a-maldives	🇲🇻	モルディブ			2800
+a-moldova	🇲🇩	モルドバ	S14	141	2810
+a-morocco	🇲🇦	モロッコ			2820
+a-mongolia	🇲🇳	モンゴル	S14	106	2830
+a-montenegro	🇲🇪	モンテネグロ	S01	44	2840
+a-jordan	🇯🇴	ヨルダン	P04	25	2850
+a-laos	🇱🇦	ラオス	S14	88	2860
+a-latvia	🇱🇻	ラトビア	S06	38	2870
+a-lithuania	🇱🇹	リトアニア	S06	85	2880
+a-libya	🇱🇾	リビア			2890
+a-liechtenstein	🇱🇮	リヒテンシュタイン			2900
+a-liberia	🇱🇷	リベリア	S14	136	2910
+a-romania	🇷🇴	ルーマニア	S21	75	2920
+a-luxembourg	🇱🇺	ルクセンブルク	C02	48	2930
+a-rwanda	🇷🇼	ルワンダ	P03	83	2940
+a-lesotho	🇱🇸	レソト	C23	80	2950
+a-lebanon	🇱🇧	レバノン			2960
+a-russia	🇷🇺	ロシア			2970
+a-n_korea	🇰🇵	北朝鮮			2980
+a-taiwan	🇹🇼	台湾	W02		2990
+a-hongkong	🇭🇰	香港			3010
+a-macao	🇲🇴	マカオ			3020
+a-n_pole	🏁	北極			3030
+a-s_pole	🇦🇶	南極			3040
+a-eu	🇪🇺	欧州連合（EU）	S07	27	4010
+a-asean	🌐	東南アジア諸国連合（ASEAN）	P29	118	4020
+a-un	🇺🇳	国際連合（UN）	P30	132	4030
+a-redcr	🌐	国際赤十字・赤新月運動	P31	26	4040
+a-iter	🌐	イーター国際核融合エネルギー機構（ITER）	P29	92	4050
+a-istc	🌐	国際科学技術センター（ISTC）	P29	137	4060
+a-isa	🌐	太陽に関する国際的な同盟（ISA）	P29	72	4070
+a-museum	🌐	万博博物館	P29		4080
+s-miyata	👔	Better Co-Being（宮田 裕章）	X01		5010
+s-ishiguro	👔	いのちの未来（石黒 浩）	X02		5020
+s-nakajima	👔	いのちの遊び場 クラゲ館（中島 さち子）	X03		5030
+s-ochiai	👔	null2（落合 陽一）	X04		5040
+s-fukuoka	👔	いのち動的平衡館（福岡 伸一）	X05		5050
+s-kawamori	👔	いのちめぐる冒険（河森 正治）	X06		5060
+s-koyama	👔	EARTH MART（小山 薫堂）	X07		5070
+s-kawase	👔	Dialogue Theater －いのちのあかし－（河瀨 直美）	X08		5080
+d-japanese-government	🏢	日本館	E10		6010
+d-womens-pv	🏢	ウーマンズパビリオン in collaboration with Cartier	E09		6020
+d-osaka-pv	🏢	大阪ヘルスケアパビリオン Nest for Reborn	E02		6030
+d-kansai-pv	🏢	関西パビリオン	E01		6040
+d-ntt	🏢	NTT パビリオン	E03		6050
+d-electric	🏢	電力館 可能性のタマゴたち	E08		6060
+d-sumitomo	🏢	住友館	E07		6070
+d-panasonic	🏢	パナソニックグループパビリオン「ノモの国」	E06		6080
+d-mitsubishi	🏢	三菱未来館	E05		6090
+d-yoshimoto	🏢	よしもと waraii myraii館	W10		6100
+d-pasona	🏢	PASONA NETUREVERSE	W09		6110
+d-zeri	🏢	BLUE OCEAN DOME（ブルーオーシャン・ドーム）	W06		6120
+d-bandai-namco	🏢	GUNDAM NEXT FUTURE PAVILION	W07		6130
+d-tamayama	🏢	TECH WORLD	W02		6140
+d-gas	🏢	ガスパビリオン おばけワンダーランド	W03		6150
+d-iida	🏢	飯田グループｘ大阪公立大学共同出展館	W04		6160
+d-ora	🏢	ORA外食パビリオン『宴〜UTAGE〜』	W05		6170
+wc-d01	🚻	トイレ（夢洲の庭）	WC01		7010
+wc-d02	🚻	トイレ（残念石）	WC02		7020
+wc-d03	🚻	トイレ（空気膜）	WC03		7030
+wc-d04	🚻	トイレ（土の壁）	WC04		7040
+wc-d05	🚻	トイレ（積み木）	WC05		7050
+wc-d06	🚻	トイレ（水の循環）	WC06		7060
+wc-d07	🚻	トイレ（蜃気楼）	WC07		7070
+wc-d08	🚻	トイレ（多様性）	WC08		7080
+mc-01	🍙	ローソン大阪・関西万博店	E81		8010
+mc-02	☕	ローソンカフェ大阪・関西万博店	E81		8020
+mc-03	🎁	2025大阪・関西万博 会場内 オフィシャルストア 東ゲート店 MARUZEN JUNKUDO	E81		8030
+mc-04	🎁	2025大阪・関西万博 会場内 オフィシャルストア 東ゲート店 大松松坂屋百貨店	E81		8040
+mc-05	☕	人と地球とショートケーキと FUJIYA EXPO 2025 STORE	E83		8050
+mc-06	🎁	Souvenir JAPAN EAST 大阪・関西万博店	E83		8060
+mc-07	🎁	おいしい老舗のたからばこ 大阪産（もん）名品	E83		8070
+mc-08	🎁	京丹波	E83		8080
+mc-09	🎁	北陸お花ごっつおマルシェ	E83		8090
+mc-10	🎁	Korea mart【韓国市場】	E82		8100
+mc-11	🍱	インドカレーの店	E82		8110
+mc-12	🍱	ソウル Live!	E82		8120
+mc-13	🍱	讃岐うどん	E82		8130
+mc-14	🍱	大阪ハラルムガルEXPO2025店	E82		8140
+mc-15	🍱	PAULANER IMBISS（樽生ドイツビールと洋食の店）	E82		8150
+mc-16	🍱	SOFRA produced by Mrs. Istanbul	E82		8160
+mc-17	🍱	景福宮	E82		8170
+mc-18	🍱	SAIGON 屋台	E82		8180
+mc-19	🎁	SOLEIL EXPO2025 STORE（2F）	W01		8190
+mc-20	🎁	飲食・物販店舗（2F）	W01		8200
+mc-21	🎁	飲食・物販店舗（2F）	W01		8210
+mc-22	🎁	遊んでい館？（2F）	W01		8220
+mc-23	🍱	ピザ・ダ・マリオ（2F）	W01		8230
+mc-24	🍱	河童ラーメン本舗 大阪・関西万博店（2F）	W01		8240
+mc-25	🍱	アフリカダイニングホール PANAF'（2F）	W01		8250
+mc-26	🍱	サスティナブルフードコート 大阪のれんめぐり〜食と祭 EXPO〜	W01		8260
+mc-27	🎁	飲食・物販店舗	W01		8270
+mc-28	☕	K-Restaurant&Cafe'	W01		8280
+mc-29	🍱	つくもうどんEXPRESS 大阪・関西万博店	W01		8290
+mc-30	🍱	魯園菜館 大阪・関西万博店	W01		8300
+mc-31	🎁	おこしやす 京の小路 〜Kyoto's Crafts & Foods〜	W01		8310
+mc-32	🎁	K-POP SHOP 韓流スターワールド	W01		8320
+mc-33	🎁	アニメイト大阪・関西万博店	W01		8330
+mc-34	☕	f fields	F81		8340
+mc-35	🍱	とんかつ乃ぐち	F81		8350
+mc-36	🍱	EARTH SWEETS 〜Presented by Takeshita Seika〜	F81		8360
+mc-37	🍱	GF RAMEN LAB 大阪・関西万博店	F81		8370
+mc-38	🍱	テラスニチレイ	F81		8380
+mc-39	☕	THEO'S CAFE'	F81		8390
+mc-40	☕	SUNTORY PARK CAFE ⭐️	S81		8400
+mc-41	🍱	水空 SUIKUU（2F） ⭐️	S81		8410
+mc-42	🍱	近大卒の魚と紀州の恵み 近畿大学水産研究所 大阪・関西万博ウォータープラザ店（2F） ⭐️	S81		8420
+mc-43	🍙	セブン-イレブン ウォータープラザ店 ⭐️	S81		8430
+mc-44	🎁	URBAN RESEARCH EXPO2025 STORE	S81		8440
+mc-45	🍱	グランドフードコート	L81		8450
+mc-46	🍱	牛カツ京都勝牛	L81		8460
+mc-47	🍱	エスニックフュージョンレストラン	L81		8470
+mc-48	🍙	アカカベ 風の広場店	L81		8480
+mc-49	🍱	好きやねん大阪 フードコート WEST SIDE	L81		8490
+mc-50	🍱	ディワンキッチン	L81		8500
+mc-51	🎁	Asia物産	L81		8510
+mc-52	🎁	Souvenir JAPAN WEST 大阪・関西万博店	L81		8520
+mc-53	🍙	セブン-イレブン 西ゲート店 ⭐️	W81		8530
+mc-54	🎁	KANSAIマルシェいちびり庵	W81		8540
+mc-55	☕	菓匠 芭蕉堂 和スイーツカフェ	W81		8550
+mc-56	☕	神戸養蜂場カフェ	W81		8560
+mc-57	🍱	のり結び（大森屋おむすび専門店）	W81		8570
+mc-58	🎁	2025大阪・関西万博 会場内 オフィシャルストア 西ゲート店 JR西日本グループ	W81		8580
+mc-59	🎁	2025大阪・関西万博 会場内 オフィシャルストア 西ゲート店 KINTETSU	W81		8590
+mc-60	🍱	醗酵食堂 Hasshoku	P81		8600
+mc-61	🍱	MARE produced by Mrs. Istanbul	P81		8610
+mc-62	🍙	ファミリーマート 大阪・関西万博店	P81		8620
+mc-63	🎁	felissimore（フェリシモっと）大阪・関西万博店	P81		8630
+mc-64	🍱	好きやねん大阪 フードコート EAST SIDE（2F）	P81		8640
+mc-65	🍱	ラウンジ＆ダイニング	E14		8650
+mc-66	🍱	くら寿司 大阪・関西万博店 ⭐️	L82		8660
+mc-67	🍱	スシロー 未来型万博店 ⭐️	F82		8670
+mc-68	🍱	MANEKI FUTURE STUDIO JAPAN	F83		8680
+mc-69	☕	らぽっぽファーム〜おいもとイチゴとりんごの farm to table〜	F84		8690
+mc-70	☕	月化粧ｘうなぎパイ 大阪・関西万博店	P82		8700
