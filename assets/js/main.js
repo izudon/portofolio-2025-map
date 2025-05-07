@@ -11,7 +11,7 @@ async function main() {
     zoomDelta: 0.5,
     zoomControl: false // for let its position change.
   });
-  L.control.zoom({ position: 'topright' }).addTo(map); // position change
+  //L.control.zoom({ position: 'topright' }).addTo(map); // position change
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   //L.tileLayer('ihttps://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {

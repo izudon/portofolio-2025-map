@@ -22,7 +22,7 @@ export default class Exposition extends Entity {
     }
   
     const html = Object.values(this.collection)
-      .filter(e => e.id.startsWith("a-"))
+      .filter(e => e.id.startsWith("a-")||e.id.startsWith("s-")||e.id.startsWith("d-"))
       .map(e => e.li())
       .join("");
   
